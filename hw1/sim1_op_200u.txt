@@ -1,0 +1,37 @@
+       --- Operating Point ---
+
+V(vsp):	 1.60969	 voltage
+V(vbp):	 1.19311	 voltage
+V(n001):	 1.8	 voltage
+V(vcp):	 0.950583	 voltage
+V(vsn):	 0.188687	 voltage
+V(vbn):	 0.634758	 voltage
+V(vcn):	 0.861515	 voltage
+Id(Mn3):	 0.00116	 device_current
+Ig(Mn3):	 0	 device_current
+Ib(Mn3):	 -1.47383e-011	 device_current
+Is(Mn3):	 -0.00116	 device_current
+Id(Mn2):	 0.0002	 device_current
+Ig(Mn2):	 0	 device_current
+Ib(Mn2):	 -9.27782e-012	 device_current
+Is(Mn2):	 -0.0002	 device_current
+Id(Mn1):	 0.0002	 device_current
+Ig(Mn1):	 0	 device_current
+Ib(Mn1):	 -2.18548e-012	 device_current
+Is(Mn1):	 -0.0002	 device_current
+Id(Mp3):	 -0.0015	 device_current
+Ig(Mp3):	 -0	 device_current
+Ib(Mp3):	 5.1565e-011	 device_current
+Is(Mp3):	 0.0015	 device_current
+Id(Mp2):	 -0.0002	 device_current
+Ig(Mp2):	 -0	 device_current
+Ib(Mp2):	 4.90314e-011	 device_current
+Is(Mp2):	 0.0002	 device_current
+Id(Mp1):	 -0.0002	 device_current
+Ig(Mp1):	 -0	 device_current
+Ib(Mp1):	 1.20179e-011	 device_current
+Is(Mp1):	 0.0002	 device_current
+I(Ibp):	 0.0015	 device_current
+I(Ibn):	 0.00116	 device_current
+I(Ibm):	 0.0002	 device_current
+I(Vdd):	 -0.00286	 device_current
