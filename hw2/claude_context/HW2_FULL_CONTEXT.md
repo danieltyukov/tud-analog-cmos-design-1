@@ -251,7 +251,7 @@ Break the loop by placing a **large inductor** (L_big) between the virtual groun
 - **A (open-loop gain):** Measure Vout+ - Vout-
 - **A*beta (loop gain):** Measure Vinp+ - Vinp- (the node between input network and feedback network)
 
-![Professor's A*beta Simulation Schematic (Cadence)](images/prof_abeta_sim_schematic.png)
+![Professor's A*beta Simulation Schematic (LTspice)](images/prof_abeta_sim_schematic.png)
 
 **Key details visible in the schematic above:**
 - V9 (0.9V DC) sets the common-mode level
@@ -540,7 +540,7 @@ tau_cl = (T_48.69dB - T_40dB) * 8.686 / (48.69 - 40) = (T_48.69dB - T_40dB) * 8.
 - Break the loop with a **large inductor** between virtual ground and feedback (or remove the connection entirely)
 - Apply input to virtual ground; output of amplifier = A; node between input/feedback networks = A*beta
 - For a **loaded** simulation, add a **replica (dummy) amplifier** as load to maintain correct output loading
-- See embedded schematics in Section 8.2 above for the exact Cadence setup and whiteboard sketch
+- See embedded schematics in Section 8.2 above for the exact LTspice setup and whiteboard sketch
 
 ### 2. Grading Criteria
 - Judged on **how close you get to the target specs** — not on exceeding them
@@ -599,7 +599,7 @@ Bonus = 0 dB
 | `Project EE4520 2025-2026 (HW2).pdf` | Official homework assignment (17 pages) |
 | `Discrete-time_Folded-Cascode_Amplifier_Report_Old_Student.pdf` | Reference report from old student |
 | `my_values.png` | Personal target specifications screenshot |
-| `assistance/image.png` | Professor's Cadence schematic for A*beta simulation |
+| `assistance/image.png` | Professor's LTspice schematic for A*beta simulation |
 | `assistance/image copy.png` | Professor's whiteboard sketch - loop break with replica |
 | `assistance/image copy 2.png` | TA Guidelines page 1 (A*beta setup + schematic) |
 | `assistance/image copy 3.png` | TA Guidelines page 2 (grading criteria + power measurement) |
