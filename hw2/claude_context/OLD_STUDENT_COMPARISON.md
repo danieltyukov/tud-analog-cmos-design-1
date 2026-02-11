@@ -7,24 +7,45 @@
 | **Student Number** | 5610893 | 5714699 |
 | **Design Number** | 33 | 27 |
 | **Date** | March 2023 | January 2026 |
+| **Deadline** | --- | **Sunday Feb 15, 2026, 23:59** |
 | **Course** | EE4520 (same) | EE4520 (same) |
 | **Circuit** | Folded-cascode + ideal gain-boosting | Folded-cascode + ideal gain-boosting |
+| **Submission** | PDF report | **Online form + PDF report** |
 
 ---
 
-## 1. HEAD-TO-HEAD SPEC COMPARISON
+## 1. HEAD-TO-HEAD SUBMISSION FORM COMPARISON
 
-| Parameter | Unit | Old Student SPEC | Old Student ACHIEVED | My SPEC | My TARGET (derived) |
-|-----------|------|-----------------|---------------------|---------|-------------------|
-| Design Number | - | 33 | 33 | 27 | 27 |
-| **A_cl (closed-loop gain)** | x | **6** | 6 | **8** | 8 |
-| **SNR** | dB | 68.895 | 68.955 | **80.64** | >= 80.64 |
-| **A_settle** | dB | 60 | 60 | **63** | >= 63 |
-| **T_settle** | us | 0.580 | 0.5795 | **2.8** | <= 2.8 |
-| V_out step | V | 1.2 | 1.2 | 1.2 | 1.2 |
-| V_in step | mV | **200** | 200 | **150** | 150 |
-| Bonus on FoM_dB | dB | 0.066 | 0.066 | 0 | 0 |
-| **FoM_dB** | dB | --- | **177.35** | **>= 174** | >= 174 |
+> All units match the **actual submission form** (time in ns, power in mW, current in mA).
+
+| # | Item | Unit | His SPEC | His ACHIEVED | My SPEC | My ACHIEVED |
+|---|------|------|----------|-------------|---------|-------------|
+| 1 | Design Number | [-] | 33 | 33 | **27** | --- |
+| 2 | SNR | [dB] | 68.895 | 68.955 | **80.64** | --- |
+| 3 | Asettle | [dB] | 60 | 60 | **63** | --- |
+| 4 | Tsettle | **[ns]** | 580 | 579.5 | **2800** | --- |
+| 5 | BWcl from open-loop AC sims | [MHz] | N/A | 1.64 | N/A | --- |
+| 6 | BWcl from closed-loop AC sims | [MHz] | N/A | 1.59 | N/A | --- |
+| 7 | Time-constant tcl from closed-loop AC sims | **[ns]** | N/A | 100 | N/A | --- |
+| 8 | T40dB (accuracy of 40dB) | **[ns]** | *(his was T_30dB)* | 213 | N/A | --- |
+| 9 | T48_69dB (accuracy of 48.69dB) | **[ns]** | *(his was T_50dB)* | 450 | N/A | --- |
+| 10 | Time-constant tcl from transient sim | **[ns]** | N/A | 102.9 | N/A | --- |
+| 11 | Power dissipation | **[mW]** | low | **0.0227** | low | --- |
+| 12 | I(Vdd) | **[mA]** | low | **0.0126** | low | --- |
+| 13 | Total integrated noise | [uV] | N/A | 302.62 | N/A | --- |
+| 14 | Input step voltage | [mV] | 200 | 200 | **150** | --- |
+| 15 | Output step voltage | [V] | 1.2 | 1.2 | 1.2 | --- |
+| 16 | Cin | [pF] | N/A | 0.849 | N/A | --- |
+| 17 | Cfb | [pF] | N/A | 0.142 | N/A | --- |
+| 18 | Cload | [pF] | N/A | 0.849 | N/A | --- |
+| 19 | CCM | [pF] | N/A | 0.142 | N/A | --- |
+| 20 | Rbig | [GOhm] | big | 100 | big | --- |
+| 21 | Cbig | [nF] | big | 1000 | big | --- |
+| 22 | Bonus points on FoM_dB | [-] | 0.066 | 0.066 | **0** | --- |
+| 23 | FoM_lin | [J] | N/A | 1.87e-18 | N/A | --- |
+| 24 | FoM_dB | [dB] | --- | **177.35** | **>= 174.00** | --- |
+
+> **Note on rows 8-9:** His assignment used T_30dB and T_50dB as the two settling thresholds. My assignment uses **T_40dB and T_48.69dB** instead. The concept is identical but the dB checkpoints are different.
 
 ### Key Differences in Specs
 
@@ -35,11 +56,11 @@
    - **I need higher open-loop unity-gain frequency for same BW_cl** since f_unity = A_cl * BW_cl
 
 2. **SNR:** Mine is 80.64 dB vs his 68.895 dB — a huge **11.7 dB** difference. This means:
-   - My max noise = 78.8 uV_rms (his could tolerate much more: ~302.6 uV_rms achieved)
+   - My max noise = 78.8 uV (his could tolerate much more: ~302.6 uV achieved)
    - **I need ~3.8x lower noise power** (since 11.7 dB ~ factor of 3.85 in power)
    - This will likely require larger capacitors and/or more current
 
-3. **Settling time:** Mine is 2.8 us vs his 580 ns — mine is **4.8x slower** (more relaxed)
+3. **Settling time:** Mine is 2800 ns vs his 580 ns — mine is **4.8x slower** (more relaxed)
    - This is the one spec that works in my favor
    - Less bandwidth needed, potentially lower power possible
 
@@ -52,16 +73,15 @@
 
 | Derived Parameter | Old Student | Mine | Notes |
 |---|---|---|---|
-| tau_cl (estimated) | 8.686 * 580ns / 60 = **83.9 ns** | 8.686 * 2.8us / 63 = **386 ns** | Mine 4.6x slower |
+| tau_cl (estimated) | 8.686 * 580ns / 60 = **83.9 ns** | 8.686 * 2800ns / 63 = **386 ns** | Mine 4.6x slower |
 | BW_cl (estimated) | 1 / (2pi*83.9ns) = **1.90 MHz** | 1 / (2pi*386ns) = **0.412 MHz** | Mine 4.6x lower |
 | f_unity (estimated) | 6 * 1.90 = **11.4 MHz** | 8 * 0.412 = **3.30 MHz** | Mine 3.5x lower |
-| V_noise target | sqrt of (0.8485/10^(68.895/20))^2 ... actual **302.6 uV** | **78.8 uV_rms** | Mine 3.8x tighter |
+| V_noise target | **302.6 uV** (achieved) | **78.8 uV** | Mine 3.8x tighter |
 | SNR_linear | 10^(68.895/20) = **2783** | 10^(80.64/20) = **10764** | Mine 3.87x larger |
-| V_signal_rms | 1.2/(2*sqrt(2)) = **0.4243** ... wait his A_cl=6 | 1.2/(2*sqrt(2)) = **0.4243** | Same output swing |
+| V_signal_rms | 0.8485 V_rms | 0.8485 V_rms | Same (V_out_step = 1.2V for both) |
 
-> Wait - the rms signal depends on A_cl and output step. V_out_step = 1.2 V_pd for both. V_out_rms = 1.2 / sqrt(2) = 0.8485 V_rms (same for both since output step is the same).
-
-So noise target:
+Noise target calculation:
+- V_out_rms = 1.2 / sqrt(2) = 0.8485 V_rms (same for both since output step is the same)
 - Old student: 0.8485 / 2783 = **304.9 uV** (he achieved 302.6 uV — basically on-target)
 - Me: 0.8485 / 10764 = **78.8 uV** — I need 3.87x less noise
 
@@ -254,7 +274,7 @@ So noise target:
 | **V_in step** | 200 mV | **150 mV** | Smaller input swing (matches higher A_cl) |
 | **SNR** | 68.9 dB | **80.64 dB** | ~3.87x tighter noise; may need much larger C_in or more current |
 | **A_settle** | 60 dB | **63 dB** | 3 dB more accuracy; need slightly better settling |
-| **T_settle** | 580 ns | **2.8 us** | 4.8x more time — major relaxation; can use less BW/power |
+| **T_settle** | 580 ns | **2800 ns** | 4.8x more time — major relaxation; can use less BW/power |
 | **Settling thresholds** | T_30dB, T_50dB | **T_40dB, T_48.69dB** | Different measurement points on settling curve |
 | **Noise budget** | ~305 uV | **78.8 uV** | Need ~15x larger C or proportionally more gm |
 | **BW_cl needed** | ~1.9 MHz | **~0.41 MHz** | 4.6x less bandwidth — saves power |
@@ -266,7 +286,7 @@ So noise target:
 ## 12. STRATEGY: Adapting His Flow to My Specs
 
 ### The Fundamental Trade-off Shift
-His design was **speed-limited** (needed fast settling in 580ns). My design is **noise-limited** (need 78.8 uV noise with relaxed 2.8us settling). This fundamentally changes the optimization strategy:
+His design was **speed-limited** (needed fast settling in 580 ns). My design is **noise-limited** (need 78.8 uV noise with relaxed 2800 ns settling). This fundamentally changes the optimization strategy:
 
 - **His priority:** Fast enough BW → needed high gm → needed more current → power
 - **My priority:** Low enough noise → need larger C_in (or more gm) → but BW is relaxed → can potentially use less current if C is sized right
@@ -293,7 +313,7 @@ His design was **speed-limited** (needed fast settling in 580ns). My design is *
 - Every reduction in current must be checked against both BW and noise
 
 ### Expected Order of Magnitude
-- His power: 22.7 uW with BW=1.6MHz, noise=302uV
+- His power: 0.0227 mW (22.7 uW) with BW=1.6MHz, noise=302uV
 - My BW is 4x lower (saves power), but my noise is 3.8x tighter (costs power in C or gm)
 - Rough expectation: similar power range, maybe slightly higher due to noise dominance
 - Target: FoM_dB >= 174 dB (his achieved 177.35 — but with different specs and bonus)
@@ -310,6 +330,6 @@ When building my simulations, use these as visual references for what the plots 
 | Del. 3: Branch Currents | ![](images/old_branch_currents.png) | Same style, my current values |
 | Del. 4: Bode A & Abeta | ![](images/old_bode_A_Abeta.png) | Same plot format; my BW_cl ≈ 0.41 MHz |
 | Del. 5: Closed-Loop Bode | ![](images/old_bode_closed_loop.png) | Same format; my passband = 18.06 dB (not 15.6) |
-| Del. 6: Settling | ![](images/old_settling.png) | Same format; mark 63 dB at 2.8 us |
+| Del. 6: Settling | ![](images/old_settling.png) | Same format; mark 63 dB at 2800 ns |
 | Del. 7: Settling + Times | ![](images/old_settling_times.png) | Same format; mark T_40dB, T_48.69dB (not T_30/T_50) |
 | Del. 8: Noise Density | ![](images/old_noise.png) | Same format; my total must be <= 78.8 uV |

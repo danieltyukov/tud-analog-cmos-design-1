@@ -4,6 +4,9 @@
 - **Student Number:** 5714699
 - **Course:** EE4520 Analogue CMOS Design 1
 - **Assignment:** Homework 2 - Discrete-Time Fully Differential Folded-Cascode Amplifier
+- **Submission deadline:** Sunday, February 15th, 2026, 23:59
+- **Submission:** Online form — upload PDF report + fill in all results in web form
+- **Contact:** f.sebastiano@tudelft.nl
 
 ---
 
@@ -336,34 +339,46 @@ Where:
 | 9    | Del. 8      | Output noise power density vs frequency (10kHz-100GHz), show integrated noise |
 | 10   | Del. 9      | Short description of design process (max 1 page, **20% of final grade**) |
 
-### Table of Results Template (Deliverable 1)
+### Submission Form — Exact Fields (must fill in online + in PDF report)
 
-| Item | Design Item | Unit | Spec | Achieved |
-|------|-------------|------|------|----------|
-| 1  | Design Number | - | 27 | 27 |
-| 2  | SNR | [dB] | 80.64 | ??? |
-| 3  | A_settle | [dB] | 63 | ??? |
-| 4  | T_settle | [us] | 2.8 | ??? |
-| 5  | BW_cl from open-loop AC sims | [MHz] | --- | ??? |
-| 6  | BW_cl from closed-loop AC sims | [MHz] | --- | ??? |
-| 7  | tau_cl from closed-loop AC sims | [us] | --- | ??? |
-| 8  | T_40dB (time to reach 40 dB accuracy) | [us] | --- | ??? |
-| 9  | T_48.69dB (time to reach 48.69 dB accuracy) | [us] | --- | ??? |
-| 10 | tau_cl from transient simulation | [us] | --- | ??? |
-| 11 | Power dissipation | [uW] | Lowest possible | ??? |
-| 12 | I(V_dd) | [uW] | Lowest possible | ??? |
-| 13 | Total integrated noise | [uV_rms] | --- | ??? |
-| 14 | Input step voltage | [mV] | 150 | 150 |
-| 15 | Output step voltage | [V] | 1.2 | 1.2 |
-| 16 | C_in | [pF] | --- | ??? |
-| 17 | C_fb | [pF] | --- | ??? |
-| 18 | C_load | [pF] | --- | ??? |
-| 19 | C_CM | [pF] | --- | ??? |
-| 20 | R_big | [GOhm] | Big | ??? |
-| 21 | C_big | [nF] | Big | ??? |
-| 22 | Bonus points on FoM_dB | [dB] | 0 | 0 |
-| 23 | FoM_lin = 2pi*Power*T_8.6dB / SNR_lin^2 | [J] | <= 3.98e-18 | ??? |
-| 24 | FoM_dB = -10*log10(FoM_lin) | [dB] | >= 174.0 | ??? |
+> **IMPORTANT:** The online form requires you to enter BOTH your spec AND your achieved value for each row. Units must match exactly. T_settle is in **ns** (not us), power is in **mW** (not uW).
+
+| # | Item | Unit | Spec (enter yours) | Achieved by you |
+|---|------|------|--------------------|-----------------|
+| 1 | Design Number | [-] | 27 | N/A (auto) |
+| 2 | SNR | [dB] | 80.64 | ??? |
+| 3 | Asettle | [dB] | 63 | ??? |
+| 4 | Tsettle | **[ns]** | **2800** | ??? |
+| 5 | BWcl from open-loop AC sims | [MHz] | N/A | ??? |
+| 6 | BWcl from closed-loop AC sims | [MHz] | N/A | ??? |
+| 7 | Time-constant tcl (tau) from closed-loop AC sims | **[ns]** | N/A | ??? |
+| 8 | T40dB (time to reach accuracy of 40dB) | **[ns]** | N/A | ??? |
+| 9 | T48_69dB (time to reach accuracy of 48.69dB) | **[ns]** | N/A | ??? |
+| 10 | Time-constant tcl (tau) from transient sim | **[ns]** | N/A | ??? |
+| 11 | Power dissipation | **[mW]** | low | ??? |
+| 12 | I(Vdd) | **[mA]** | low | ??? |
+| 13 | Total integrated noise | [uV] | N/A | ??? |
+| 14 | Input step voltage | [mV] | 150 | ??? |
+| 15 | Output step voltage | [V] | 1.2 | ??? |
+| 16 | Cin | [pF] | N/A | ??? |
+| 17 | Cfb | [pF] | N/A | ??? |
+| 18 | Cload | [pF] | N/A | ??? |
+| 19 | CCM | [pF] | N/A | ??? |
+| 20 | Rbig | [GOhm] | big | ??? |
+| 21 | Cbig | [nF] | big | ??? |
+| 22 | Bonus points on FoM_dB | [-] | 0 | N/A (auto) |
+| 23 | FoM_lin | [J] | N/A | ??? |
+| 24 | FoM_dB | [dB] | >= 174.00 | ??? |
+
+### Unit Conversion Cheat Sheet (for filling in the form)
+```
+T_settle: 2.8 us = 2800 ns (form uses ns!)
+Power:    in mW (e.g., 0.0227 mW = 22.7 uW)
+I(Vdd):   in mA (e.g., 0.0126 mA = 12.6 uA)
+tau_cl:   in ns (e.g., 386 ns)
+T40dB:    in ns
+T48_69dB: in ns
+```
 
 ---
 
