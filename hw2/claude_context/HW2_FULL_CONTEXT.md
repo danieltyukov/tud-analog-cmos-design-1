@@ -159,9 +159,86 @@ Uses the biasing block designed in HW1. The biasing circuit generates:
 
 ![Fig. 6 - Biasing Circuit](images/fig6_biasing_circuit.png)
 
+### My HW1 Biasing Design (Final Values)
+
+#### Transistor Parameters
+- **W = 1 um, L = 0.18 um** (same unit transistor as HW2)
+- **Mn = 11** (NMOS multiplier in biasing circuit)
+- **Mp = 60** (PMOS multiplier in biasing circuit)
+- **mp-ratio = Mp / Mn = 60 / 11 ≈ 5.45**
+- **I_b,main = 200 uA**
+- **ratio_n = 5.8** → I_b,ncas = 5.8 × 200 uA = **1160 uA**
+- **ratio_p = 7.5** → I_b,pcas = 7.5 × 200 uA = **1500 uA**
+
+#### How ratio_n = 5.8 Was Determined (HW1 DC Sweep)
+
+![HW1 Fig 1 - Rn DC Sweep: V(Vsn) vs Rn](images/hw1_fig1_rn_sweep.png)
+
+#### How ratio_p = 7.5 Was Determined (HW1 DC Sweep)
+
+![HW1 Fig 2 - Rp DC Sweep: V(Vsp) vs Rp](images/hw1_fig2_rp_sweep.png)
+
+#### Biasing Circuit Schematic with Annotated Node Voltages (at 200 uA)
+
+![HW1 Fig 3 - Biasing Schematic with Node Voltages](images/hw1_fig3_biasing_schematic_annotated.png)
+
+#### Bias Voltages (at I_b,main = 200 uA)
+
+![HW1 Table 1 - Node Voltages at Different Bias Currents](images/hw1_table1_node_voltages.png)
+
+| Bias Node | Voltage [mV] | Purpose |
+|-----------|-------------|---------|
+| V_bn | 634.8 | NMOS current mirror gate bias |
+| V_sn | 188.7 | NMOS cascode source bias |
+| V_cn | 861.5 | NMOS cascode gate bias |
+| V_cp | 950.6 | PMOS cascode gate bias |
+| V_sp | 1609.7 | PMOS cascode source bias |
+| V_bp | 1193.1 | PMOS current mirror gate bias |
+
+#### Branch Currents (at I_b,main = 200 uA)
+
+![HW1 Table 2 - Branch Currents at Different Bias Levels](images/hw1_table2_3_currents_params.png)
+
+| Parameter | Value |
+|-----------|-------|
+| I_d,Mn1 (main bias) | 200 uA |
+| I_d,Mp1 (PMOS mirror) | 200 uA |
+| I_b,ncas (NMOS cascode branch) | 1160 uA |
+| I_b,pcas (PMOS cascode branch) | 1500 uA |
+
+#### Cascode Current Source Characterization (HW1 Simulation 2)
+
+HW1 Simulation 2 added cascode current sources (Mn4+Mn5 for NMOS, Mp4+Mp5 for PMOS) and characterized their output impedance:
+
+![HW1 Fig 4 - Simulation 2 Circuit: Biasing + Cascode Current Sources](images/hw1_fig4_sim2_schematic.png)
+
+##### NMOS Current Source I-V and Output Impedance
+
+![HW1 Fig 5 - NMOS Cascode: I(Von) and Rout vs Von](images/hw1_fig5_nmos_iv_rout.png)
+
+##### PMOS Current Source I-V and Output Impedance
+
+![HW1 Fig 6 - PMOS Cascode: I(Vop) and Rout vs Vop](images/hw1_fig6_pmos_iv_rout.png)
+
+##### Summary of Cascode Current Source Results
+
+![HW1 Table 4 - Simulation 2 Summary](images/hw1_table4_sim2_summary.png)
+
+| Parameter | NMOS Branch | PMOS Branch |
+|-----------|------------|------------|
+| Saturation current | ~200 uA | ~200 uA |
+| Min. voltage for saturation (V_on,min) | ~300 mV | ~300 mV (V_dd - V_op,max) |
+| Output impedance R_out | > 1 MOhm | ~550 kOhm |
+
+- NMOS cascode: Mn4 (gate = V_cn), Mn5 (gate = V_bn)
+- PMOS cascode: Mp4 (gate = V_bp), Mp5 (gate = V_cp)
+- Decoupling capacitors C_big = 1 F on all bias nodes
+
+**Note:** The cascode configuration provides high output impedance essential for the folded-cascode amplifier gain in HW2. With ideal gain-boosting (A_add = 100), the effective output impedance is further increased by a factor of A_add.
+
 ### Critical Biasing Relations
-- **I_b,ncas = ratio_n * I_b,main** (from HW1)
-- **I_b,pcas = ratio_p * I_b,main** (from HW1)
+- **I_b,ncas = ratio_n * I_b,main = 5.8 × I_b,main** (from HW1)
+- **I_b,pcas = ratio_p * I_b,main = 7.5 × I_b,main** (from HW1)
 - **You may need to adjust voltages/currents for optimal results**
 - Use **separate supply V_ddb = 1.8V** for biasing (excluded from power dissipation)
 - Use **large decoupling capacitors (~1 uF) on ALL bias lines**
@@ -200,7 +277,18 @@ I_d,MP1 = I_d,MP3 = I_d,MN1
 
 Where:
 - **ScaleA** = scaling parameter for entire OpAmp (main design variable, YOU choose this)
-- **mp-ratio** = ratio between N- and PMOS transistors (from HW1 biasing, to get correct biasing)
+- **mp-ratio = Mp / Mn = 60 / 11 ≈ 5.45** (from HW1 biasing: Mp=60, Mn=11)
+
+#### Concrete Example (ScaleA = 1)
+| Transistor | m-formula | m-value (ScaleA=1) |
+|------------|-----------|-------------------|
+| MN1, MN2 | 4 × ScaleA | 4 |
+| MN5, MN6, MN7, MN8 | 2 × ScaleA | 2 |
+| MN3, MN4 | 2 × ScaleA | 2 |
+| MP1, MP3 | 4 × ScaleA × 5.45 | 21.8 |
+| MP2, MP4 | 2 × ScaleA × 5.45 | 10.9 |
+
+**LTspice .asc files from HW1:** `hw1/Simulation_1.asc` (biasing), `hw1/Simulation_2.asc` (cascode sources)
 
 ---
 
@@ -619,6 +707,9 @@ Bonus = 0 dB
 | `assistance/image copy 2.png` | TA Guidelines page 1 (A*beta setup + schematic) |
 | `assistance/image copy 3.png` | TA Guidelines page 2 (grading criteria + power measurement) |
 | `claude_context/HW2_FULL_CONTEXT.md` | This file - complete design context |
+| `../hw1/Simulation_1.asc` | HW1 biasing circuit LTspice (Mn=11, Mp=60, Rn=5.8, Rp=7.5) |
+| `../hw1/Simulation_2.asc` | HW1 cascode current sources LTspice (extended biasing) |
+| `../hw1/HW1_EE4520_5714699.pdf` | HW1 report - biasing design, all operating point data |
 
 ### All Figures (Embedded)
 
