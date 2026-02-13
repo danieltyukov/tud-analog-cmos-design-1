@@ -1,0 +1,33 @@
+* Z:\home\danieltyukov\workspace\tud\tud-analog-cmos-design-1\hw1\Simulation_1.asc
+Mp1 Vsp Vbp Vdd Vdd pch l=L w=W m=Mp
+Mp2 Vbp Vcp Vsp Vdd pch l=L w=W m=Mp
+Mp3 Vcp Vcp Vdd Vdd pch l=L w=W m=Mp
+Mn1 Vsn 0 0 0 nch l=L w=W m={Mn}
+Mn2 0 Vcn Vsn 0 nch l=L w=W m={Mn}
+Mn3 Vcn Vcn 0 0 nch l=L w=W m={Mn}
+Vdd Vdd 0 1.8
+Ibm Vbp 0 {Ibm}
+Ibn Vdd Vcn {Ibm*Rn}
+Ibp Vcp 0 {Ibm*Rp}
+Mp4 N001 Vbp Vdd Vdd pch l=L w=W m=Mp
+Mp5 Vop Vcp N001 Vdd pch l=L w=W m=Mp
+Mn4 Ion Vcn N002 0 nch l=L w=W m={Mn}
+Mn5 N002 0 0 0 nch l=L w=W m={Mn}
+C1 Vdd Vbp 1
+C2 Vdd Vcp 1
+C3 Vcn 0 1
+C4 0 0 1
+Vop Vop 0 1
+Von Ion 0 0
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\danieltyukov\Documents\LTspiceXVII\lib\cmp\standard.mos
+.param W=1u L=0.18u Mp=60 Mn=11 Ibm=200u Rn=5.8 Rp=7.5
+;step param Mn list 5,10,15
+.op
+;dc param Rn 3 9 0.1
+.lib 'C:\Program Files\LTC\LTspiceXVII\lib\cmp\log018.l' TT
+;dc param Rp 3 12 0.1
+;dc Vop 0 1.8 0.01
+.backanno
+.end
