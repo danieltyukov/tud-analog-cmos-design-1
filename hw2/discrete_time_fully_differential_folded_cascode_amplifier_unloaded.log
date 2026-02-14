@@ -46,7 +46,7 @@ Questionable use of curly braces in ".model pch.11 pmos ( lmin ={5e-07-dxl} lmax
     Error: undefined symbol in: "[cjswgp]"
 Questionable use of curly braces in ".model pch.12 pmos ( lmin =1.8e-07 lmax ={5e-07-dxl} wmin =2.2e-07 wmax ={6e-07-dxw} noimod =1 ef =1.25 af =1.052 kf =0 level =49 tnom =25 version =3.2 tox ={toxp} xj =1.7e-07 nch =3.9e+17 lln =-1 lwn =1 wln =1 wwn =1 lint =1.5e-08 ll =0 lw =0 lwl =0 wint =1.5e-08 wl =0 ww =0 wwl =0 mobmod =1 binunit =2 xl ={-2e-08+dxl} xw ={0+dxw} dwg =0 dwb =0 acm =12 ldif =9e-08 hdif ={hdifp} rsh =7.2 rd =0 rs =0 vth0 ={-0.4639236+dvthp} lvth0 =5.381074e-10 wvth0 =8.414935e-09 pvth0 =-2.695369e-15 k1 =0.4669949 lk1 =1.459046e-08 wk1 =8.058935e-09 pk1 =3.577831e-15 k2 =0.05886395 lk2 =-3.555999e-09 wk2 =-3.776749e-09 pk2 =-2.00502e-15 k3 =0 dvt0 =0 dvt1 =0 dvt2 =0 dvt0w =0 dvt1w =0 dvt2w =0 nlx =0 w0 =0 k3b =0 vsat =130812.5 lvsat =-0.0003656262 ua =1.950118e-09 lua =-2.517664e-16 wua =-4.017582e-16 pua =5.471478e-23 ub =-4.603974e-19 lub =2.488361e-25 wub =1.339767e-25 pub =-6.528375e-32 uc =-2.791416e-10 luc =3.170657e-17 wuc =5.523607e-18 puc =-7.601201e-24 rdsw =530 prwb =0 prwg =0 wr =1 u0 =0.01060315 lu0 =-3.302419e-10 wu0 =-8.747751e-10 pu0 =1.178083e-16 a0 =1.424732 la0 =6.052879e-09 wa0 =3.572804e-08 pa0 =-5.269527e-15 keta =0.03131204 lketa =-5.161843e-09 wketa =-1.257509e-09 pketa =6.471187e-16 a1 =0 a2 =0.4 ags =0.03625 lags =-7.312499e-09 b0 =0 b1 =0 voff =-0.1281644 lvoff =-5.916089e-09 wvoff =2.482577e-09 pvoff =1.261953e-15 nfactor =1 cit =8.534375e-05 lcit =5.429531e-11 cdsc =0 cdscb =0 cdscd =0 eta0 =-0.0004687499 leta0 =2.559375e-10 etab =0.0006718751 letab =-3.473438e-10 dsub =0 pclm =0.9657306 lpclm =1.542123e-08 wpclm =4.02174e-09 ppclm =-1.809783e-15 pdiblc1 =1e-06 pdiblc2 =0.0059375 lpdiblc2 =1.828125e-09 pdiblcb =0.01 drout =0 pscbe1 =3.5e+08 pscbe2 =5e-07 pvag =0 delta =0.01 alpha1 =6.8730453846 beta0 =22.67827 kt1 =-0.2138071 lkt1 =-2.114083e-09 wkt1 =-3.186682e-09 pkt1 =-8.468991e-16 kt2 =-0.03507274 lkt2 =2.670948e-09 wkt2 =3.652781e-09 pkt2 =-9.236432e-16 at =10000 ute =-0.5993978 lute =-5.860002e-10 wute =-4.505475e-08 pute =5.179581e-15 ua1 =1.224e-09 ub1 =-1.443847e-18 lub1 =-1.136091e-26 wub1 =-2.019831e-27 pub1 =1.658154e-32 uc1 =1.970068e-10 luc1 =-2.356221e-17 wuc1 =-3.108965e-17 puc1 =5.340393e-24 kt1l =0 prt =0 cj ={cjp} pb =0.895226 mj =0.4476 cjsw ={cjswp} pbsw =0.895226 mjsw =0.3683619 cjswg ={cjswgp} pbswg =0.895226 mjswg =0.3683619 cgdo ={cgop} cgso ={cgop} tcj =0.0009739001 tcjsw =0.0004130718 tcjswg =0.0004130718 tpb =0.001572025 tpbsw =0.001572025 tpbswg =0.001572025 js =4.92e-06 jsw =9e-10 n =1 xti =3 capmod =3 nqsmod =0 xpart =1 cf =0 tlev =1 tlevc =1 calcacm =1 sfvtflag=0 alpha0 =0 dlc =2e-9 llc =-0.039 )"
     Error: undefined symbol in: "[cjswgp]"
-Circuit: * Z:\home\danieltyukov\workspace\tud\tud-analog-cmos-design-1\hw2\discrete_time_fully_differential_folded_cascode_amplifier.asc
+Circuit: * Z:\home\danieltyukov\workspace\tud\tud-analog-cmos-design-1\hw2\discrete_time_fully_differential_folded_cascode_amplifier_unloaded.asc
 
 Ignoring BSIM parameter XL
 Ignoring BSIM parameter XW
@@ -66,9 +66,9 @@ Ignoring BSIM parameter TLEV
 Ignoring BSIM parameter TLEVC
 Ignoring BSIM parameter CALCACM
 Ignoring BSIM parameter SFVTFLAGl
-Error on line 1322 : .model pch.9 pmos ( lmin =1.8e-07 lmax = 5e-007  wmin = 6e-007  wmax = 1.3e-006  noimod =1 ef =1.25 af =1.052 kf =0 level =49 tnom =25 version =3.2 tox = 4.23e-009  xj =1.7e-07 nch =3.9e+17 lln =-1 lwn =1 wln =1 wwn =1 lint =1.5e-08 ll =0 lw =0 lwl =0 wint =1.5e-08 wl =0 ww =0 wwl =0 mobmod =1 binunit =2 xl = -2e-008  xw = 0  dwg =0 dwb =0 acm =12 ldif =9e-08 hdif = 3e-007  rsh =7.2 rd =0 rs =0 vth0 = -0.4342877  lvth0 =-1.371066e-08 wvth0 =-8.477504e-09 pvth0 =5.426431e-15 k1 =0.7542717 lk1 =-1.214128e-08 wk1 =-1.556889e-07 pk1 =1.881492e-14 k2 =-0.04034913 lk2 =6.065043e-09 wk2 =5.277471e-08 pk2 =-7.489014e-15 k3 =0 dvt0 =0 dvt1 =0 dvt2 =0 dvt0w =0 dvt1w =0 dvt2w =0 nlx =0 w0 =0 k3b =0 vsat =130812.5 lvsat =-0.0003656224 ua =-3.876963e-10 lua =6.662492e-17 wua =9.307964e-16 pua =-1.267683e-22 ub =1.708786e-18 lub =-7.860463e-26 wub =-1.102458e-24 pub =1.213575e-31 uc =-2.692677e-11 luc =5.118379e-18 wuc =-1.382389e-16 puc =7.55407e-24 rdsw =530 prwb =0 prwg =0 wr =1 u0 =0.006271143 lu0 =2.966392e-10 wu0 =1.594468e-09 pu0 =-2.39514e-16 a0 =0.3846521 la0 =1.914046e-07 wa0 =6.285738e-07 pa0 =-1.1092e-13 keta =0.01588796 lketa =-1.306077e-09 wketa =7.534219e-09 pketa =-1.550669e-15 a1 =0 a2 =0.4 ags =0.006767845 lags =5.954466e-09 wags =1.680483e-08 pags =-7.562171e-15 b0 =0 b1 =0 voff =-0.1286419 lvoff =5.741402e-10 wvoff =2.754739e-09 pvoff =-2.437478e-15 nfactor =1 cit =0.0001336648 lcit =4.801357e-11 wcit =-2.7543e-11 pcit =3.580592e-18 cdsc =0 cdscb =0 cdscd =0 eta0 =-0.0004687502 leta0 =2.559375e-10 etab =0.0006718751 letab =-3.473438e-10 dsub =0 pclm =0.8429525 lpclm =7.067135e-08 wpclm =7.400524e-08 ppclm =-3.330235e-14 pdiblc1 =1e-06 pdiblc2 =0.009622769 lpdiblc2 =1.697542e-10 wpdiblc2=-2.100604e-09 ppdiblc2 =9.452714e-16 pdiblcb =0.01 drout =0 pscbe1 =3.5e+08 pscbe2 =5e-07 pvag =0 delta =0.01 alpha1 =6.8730453846 beta0 =22.67827 kt1 =-0.2223596 lkt1 =-4.408159e-09 wkt1 =1.688208e-09 pkt1 =4.607245e-16 kt2 =-0.01169408 lkt2 =-3.220356e-09 wkt2 =-9.673057e-09 pkt2 =2.4344e-15 at =10000 ute =-0.5805172 lute =9.190298e-09 wute =-5.581674e-08 pute =-3.929105e-16 ua1 =1.224e-09 ub1 =-1.64321e-18 lub1 =7.94965e-26 wub1 =1.116172e-25 pub1 =-3.520719e-32 uc1 =-5.644295e-11 luc1 =1.184368e-17 wuc1 =1.133767e-16 puc1 =-1.484096e-23 kt1l =0 prt =0 cj = 0.00124124  pb =0.895226 mj =0.4476 cjsw = 2.76474e-010  pbsw =0.895226 mjsw =0.3683619 cjswg =(cjswgp) pbswg =0.895226 mjswg =0.3683619 cgdo = 3.725e-010  cgso = 3.725e-010  tcj =0.0009739001 tcjsw =0.0004130718 tcjswg =0.0004130718 tpb =0.001572025 tpbsw =0.001572025 tpbswg =0.001572025 js =4.92e-06 jsw =9e-10 n =1 xti =3 capmod =3 nqsmod =0 xpart =1 cf =0 tlev =1 tlevc =1 calcacm =1 sfvtflag=0 alpha0 =0 dlc =2e-9 llc =-0.039 )
+Error on line 1294 : .model pch.9 pmos ( lmin =1.8e-07 lmax = 5e-007  wmin = 6e-007  wmax = 1.3e-006  noimod =1 ef =1.25 af =1.052 kf =0 level =49 tnom =25 version =3.2 tox = 4.23e-009  xj =1.7e-07 nch =3.9e+17 lln =-1 lwn =1 wln =1 wwn =1 lint =1.5e-08 ll =0 lw =0 lwl =0 wint =1.5e-08 wl =0 ww =0 wwl =0 mobmod =1 binunit =2 xl = -2e-008  xw = 0  dwg =0 dwb =0 acm =12 ldif =9e-08 hdif = 3e-007  rsh =7.2 rd =0 rs =0 vth0 = -0.4342877  lvth0 =-1.371066e-08 wvth0 =-8.477504e-09 pvth0 =5.426431e-15 k1 =0.7542717 lk1 =-1.214128e-08 wk1 =-1.556889e-07 pk1 =1.881492e-14 k2 =-0.04034913 lk2 =6.065043e-09 wk2 =5.277471e-08 pk2 =-7.489014e-15 k3 =0 dvt0 =0 dvt1 =0 dvt2 =0 dvt0w =0 dvt1w =0 dvt2w =0 nlx =0 w0 =0 k3b =0 vsat =130812.5 lvsat =-0.0003656224 ua =-3.876963e-10 lua =6.662492e-17 wua =9.307964e-16 pua =-1.267683e-22 ub =1.708786e-18 lub =-7.860463e-26 wub =-1.102458e-24 pub =1.213575e-31 uc =-2.692677e-11 luc =5.118379e-18 wuc =-1.382389e-16 puc =7.55407e-24 rdsw =530 prwb =0 prwg =0 wr =1 u0 =0.006271143 lu0 =2.966392e-10 wu0 =1.594468e-09 pu0 =-2.39514e-16 a0 =0.3846521 la0 =1.914046e-07 wa0 =6.285738e-07 pa0 =-1.1092e-13 keta =0.01588796 lketa =-1.306077e-09 wketa =7.534219e-09 pketa =-1.550669e-15 a1 =0 a2 =0.4 ags =0.006767845 lags =5.954466e-09 wags =1.680483e-08 pags =-7.562171e-15 b0 =0 b1 =0 voff =-0.1286419 lvoff =5.741402e-10 wvoff =2.754739e-09 pvoff =-2.437478e-15 nfactor =1 cit =0.0001336648 lcit =4.801357e-11 wcit =-2.7543e-11 pcit =3.580592e-18 cdsc =0 cdscb =0 cdscd =0 eta0 =-0.0004687502 leta0 =2.559375e-10 etab =0.0006718751 letab =-3.473438e-10 dsub =0 pclm =0.8429525 lpclm =7.067135e-08 wpclm =7.400524e-08 ppclm =-3.330235e-14 pdiblc1 =1e-06 pdiblc2 =0.009622769 lpdiblc2 =1.697542e-10 wpdiblc2=-2.100604e-09 ppdiblc2 =9.452714e-16 pdiblcb =0.01 drout =0 pscbe1 =3.5e+08 pscbe2 =5e-07 pvag =0 delta =0.01 alpha1 =6.8730453846 beta0 =22.67827 kt1 =-0.2223596 lkt1 =-4.408159e-09 wkt1 =1.688208e-09 pkt1 =4.607245e-16 kt2 =-0.01169408 lkt2 =-3.220356e-09 wkt2 =-9.673057e-09 pkt2 =2.4344e-15 at =10000 ute =-0.5805172 lute =9.190298e-09 wute =-5.581674e-08 pute =-3.929105e-16 ua1 =1.224e-09 ub1 =-1.64321e-18 lub1 =7.94965e-26 wub1 =1.116172e-25 pub1 =-3.520719e-32 uc1 =-5.644295e-11 luc1 =1.184368e-17 wuc1 =1.133767e-16 puc1 =-1.484096e-23 kt1l =0 prt =0 cj = 0.00124124  pb =0.895226 mj =0.4476 cjsw = 2.76474e-010  pbsw =0.895226 mjsw =0.3683619 cjswg =(cjswgp) pbswg =0.895226 mjswg =0.3683619 cgdo = 3.725e-010  cgso = 3.725e-010  tcj =0.0009739001 tcjsw =0.0004130718 tcjswg =0.0004130718 tpb =0.001572025 tpbsw =0.001572025 tpbswg =0.001572025 js =4.92e-06 jsw =9e-10 n =1 xti =3 capmod =3 nqsmod =0 xpart =1 cf =0 tlev =1 tlevc =1 calcacm =1 sfvtflag=0 alpha0 =0 dlc =2e-9 llc =-0.039 )
 	* Unrecognized parameter "cjswgp" -- ignored
-Error on line 1310 : .model nch.9 nmos ( lmin =1.8e-07 lmax = 5e-007  wmin = 6e-007  wmax = 1.3e-006  noimod =1 ef =0.825 af =0.8256 kf =0 level =49 tnom =25 version =3.2 tox = 4.08e-009  xj =1.6e-07 nch =3.9e+17 lln =-1 lwn =1 wln =1 wwn =1 lint =1e-08 ll =0 lw =0 lwl =0 wint =1e-08 wl =0 ww =0 wwl =0 mobmod =1 binunit =2 xl = -2e-008  xw = 0  dwg =0 dwb =0 acm =12 ldif =9e-08 hdif = 3e-007  rsh =6.8 rd =0 rs =0 vth0 = 0.481488  lvth0 =1.17523e-08 wvth0 =-7.082873e-09 pvth0 =-3.069955e-15 k1 =0.4891953 lk1 =4.816888e-08 wk1 =-1.673544e-08 pk1 =-4.58442e-15 k2 =0.0302083 lk2 =-2.011056e-08 wk2 =6.031026e-10 pk2 =5.867986e-16 k3 =0 dvt0 =0 dvt1 =0 dvt2 =0 dvt0w =0 dvt1w =0 dvt2w =0 nlx =0 w0 =0 k3b =0 vsat =84637.98 lvsat =-0.0002146133 wvsat =0.001023387 pvsat =1.710496e-11 ua =-5.066291e-10 lua =-5.57622e-17 wua =-4.338739e-17 pua =2.418733e-23 ub =1.984037e-18 lub =4.988523e-26 wub =-2.700116e-26 pub =-5.535582e-32 uc =7.191223e-11 luc =1.458302e-17 wuc =-3.706532e-19 puc =-1.430133e-23 rdsw =170 prwb =0 prwg =0 wr =1 u0 =0.04022617 lu0 =5.931013e-10 wu0 =-5.385397e-10 pu0 =5.679271e-16 a0 =0.5373152 la0 =7.705761e-08 wa0 =1.305951e-07 pa0 =-6.574904e-14 keta =-0.02712423 lketa =1.748234e-09 wketa =2.6193e-09 pketa =-9.244303e-16 a1 =0 a2 =0.99 ags =0.03866202 lags =-8.58453e-09 wags =-1.487385e-09 pags =6.841983e-16 b0 =0 b1 =0 voff =-0.1276647 lvoff =1.252623e-10 wvoff =5.072778e-09 pvoff =-2.821342e-15 nfactor =1 cit =0.0002127283 lcit =1.32145e-10 wcit =4.290785e-11 pcit =-1.973761e-17 cdsc =0 cdscb =0 cdscd =0 eta0 =-0.0003198954 leta0 =1.931519e-10 weta0 =3.346616e-11 peta0 =-1.539446e-17 etab =0.001419582 letab =-6.990077e-10 wetab =-4.106481e-11 petab =1.888986e-17 dsub =0 pclm =0.9740778 lpclm =7.369557e-08 wpclm =2.155709e-07 ppclm =-1.590029e-15 pdiblc1 =1e-06 pdiblc2 =-0.003529964 lpdiblc2 =4.383784e-09 wpdiblc2=-1.241645e-09 ppdiblc2 =5.711567e-16 pdiblcb =0.01 drout =0 pscbe1 =4e+08 pscbe2 =1e-06 pvag =0 delta =0.01 alpha1 =0.448150714 beta0 =11.59263 kt1 =-0.2299624 lkt1 =1.961425e-09 wkt1 =1.35353e-09 pkt1 =1.965485e-15 kt2 =-0.02660687 lkt2 =-3.826203e-10 wkt2 =-5.189979e-09 pkt2 =1.227246e-15 at =20000 ute =-1.094227 lute =-6.902506e-08 wute =-4.799637e-07 pute =6.184562e-14 ua1 =1.224e-09 ub1 =-5.722656e-20 lub1 =-1.256748e-25 wub1 =-1.608598e-24 pub1 =2.306684e-31 uc1 =1.072241e-10 luc1 =-1.734869e-17 wuc1 =-1.511566e-16 puc1 =3.173314e-23 kt1l =0 prt =0 cj = 0.0010143  pb =0.6882682 mj =0.3595262 cjsw = 1.6724e-010  pbsw =0.6882682 mjsw =0.2003879 cjswg =(cjswgn) pbswg =0.6882682 mjswg =0.43879 cgdo = 3.4e-010  cgso = 3.4e-010  tcj =0.001040287 tcjsw =0.000645489 tcjswg =0.000645489 tpb =0.001554306 tpbsw =0.001554306 tpbswg =0.001554306 js =8.38e-06 jsw =1.6e-11 n =1 xti =3 capmod =3 nqsmod =0 xpart =1 cf =0 tlev =1 tlevc =1 calcacm =1 sfvtflag=0 alpha0 =0 dlc =3e-9 llc =-0.039 )
+Error on line 1282 : .model nch.9 nmos ( lmin =1.8e-07 lmax = 5e-007  wmin = 6e-007  wmax = 1.3e-006  noimod =1 ef =0.825 af =0.8256 kf =0 level =49 tnom =25 version =3.2 tox = 4.08e-009  xj =1.6e-07 nch =3.9e+17 lln =-1 lwn =1 wln =1 wwn =1 lint =1e-08 ll =0 lw =0 lwl =0 wint =1e-08 wl =0 ww =0 wwl =0 mobmod =1 binunit =2 xl = -2e-008  xw = 0  dwg =0 dwb =0 acm =12 ldif =9e-08 hdif = 3e-007  rsh =6.8 rd =0 rs =0 vth0 = 0.481488  lvth0 =1.17523e-08 wvth0 =-7.082873e-09 pvth0 =-3.069955e-15 k1 =0.4891953 lk1 =4.816888e-08 wk1 =-1.673544e-08 pk1 =-4.58442e-15 k2 =0.0302083 lk2 =-2.011056e-08 wk2 =6.031026e-10 pk2 =5.867986e-16 k3 =0 dvt0 =0 dvt1 =0 dvt2 =0 dvt0w =0 dvt1w =0 dvt2w =0 nlx =0 w0 =0 k3b =0 vsat =84637.98 lvsat =-0.0002146133 wvsat =0.001023387 pvsat =1.710496e-11 ua =-5.066291e-10 lua =-5.57622e-17 wua =-4.338739e-17 pua =2.418733e-23 ub =1.984037e-18 lub =4.988523e-26 wub =-2.700116e-26 pub =-5.535582e-32 uc =7.191223e-11 luc =1.458302e-17 wuc =-3.706532e-19 puc =-1.430133e-23 rdsw =170 prwb =0 prwg =0 wr =1 u0 =0.04022617 lu0 =5.931013e-10 wu0 =-5.385397e-10 pu0 =5.679271e-16 a0 =0.5373152 la0 =7.705761e-08 wa0 =1.305951e-07 pa0 =-6.574904e-14 keta =-0.02712423 lketa =1.748234e-09 wketa =2.6193e-09 pketa =-9.244303e-16 a1 =0 a2 =0.99 ags =0.03866202 lags =-8.58453e-09 wags =-1.487385e-09 pags =6.841983e-16 b0 =0 b1 =0 voff =-0.1276647 lvoff =1.252623e-10 wvoff =5.072778e-09 pvoff =-2.821342e-15 nfactor =1 cit =0.0002127283 lcit =1.32145e-10 wcit =4.290785e-11 pcit =-1.973761e-17 cdsc =0 cdscb =0 cdscd =0 eta0 =-0.0003198954 leta0 =1.931519e-10 weta0 =3.346616e-11 peta0 =-1.539446e-17 etab =0.001419582 letab =-6.990077e-10 wetab =-4.106481e-11 petab =1.888986e-17 dsub =0 pclm =0.9740778 lpclm =7.369557e-08 wpclm =2.155709e-07 ppclm =-1.590029e-15 pdiblc1 =1e-06 pdiblc2 =-0.003529964 lpdiblc2 =4.383784e-09 wpdiblc2=-1.241645e-09 ppdiblc2 =5.711567e-16 pdiblcb =0.01 drout =0 pscbe1 =4e+08 pscbe2 =1e-06 pvag =0 delta =0.01 alpha1 =0.448150714 beta0 =11.59263 kt1 =-0.2299624 lkt1 =1.961425e-09 wkt1 =1.35353e-09 pkt1 =1.965485e-15 kt2 =-0.02660687 lkt2 =-3.826203e-10 wkt2 =-5.189979e-09 pkt2 =1.227246e-15 at =20000 ute =-1.094227 lute =-6.902506e-08 wute =-4.799637e-07 pute =6.184562e-14 ua1 =1.224e-09 ub1 =-5.722656e-20 lub1 =-1.256748e-25 wub1 =-1.608598e-24 pub1 =2.306684e-31 uc1 =1.072241e-10 luc1 =-1.734869e-17 wuc1 =-1.511566e-16 puc1 =3.173314e-23 kt1l =0 prt =0 cj = 0.0010143  pb =0.6882682 mj =0.3595262 cjsw = 1.6724e-010  pbsw =0.6882682 mjsw =0.2003879 cjswg =(cjswgn) pbswg =0.6882682 mjswg =0.43879 cgdo = 3.4e-010  cgso = 3.4e-010  tcj =0.001040287 tcjsw =0.000645489 tcjswg =0.000645489 tpb =0.001554306 tpbsw =0.001554306 tpbswg =0.001554306 js =8.38e-06 jsw =1.6e-11 n =1 xti =3 capmod =3 nqsmod =0 xpart =1 cf =0 tlev =1 tlevc =1 calcacm =1 sfvtflag=0 alpha0 =0 dlc =3e-9 llc =-0.039 )
 	* Unrecognized parameter "cjswgn" -- ignored
 Warning: Pd = 0 is less than W.
 Warning: Ps = 0 is less than W.
@@ -96,179 +96,126 @@ Gmin stepping succeeded in finding the operating point.
 
 Semiconductor Device Operating Points:
                         --- BSIM3 MOSFETS ---
-Name:       mn1.3       mn2.3       mn3.3       mn4.3       mn8.3
+Name:       mn1.2       mn2.2       mn3.2       mn4.2       mn8.2
 Model:      nch.9       nch.9       nch.9       nch.9       nch.9
-Id:        6.97e-05    6.97e-05    3.49e-05    3.49e-05    3.80e-05
-Vgs:       6.35e-01    7.04e-01    6.60e-01    6.60e-01    6.69e-01
-Vds:       1.57e-01    8.67e-02    1.36e+00    1.36e+00    7.12e-01
-Vbs:       0.00e+00   -1.57e-01   -2.44e-01   -2.44e-01   -1.92e-01
-Vth:       5.26e-01    5.72e-01    5.89e-01    5.89e-01    5.78e-01
-Vdsat:     1.18e-01    1.31e-01    1.02e-01    1.02e-01    1.11e-01
-Gm:        7.27e-04    5.59e-04    4.23e-04    4.23e-04    4.37e-04
-Gds:       1.10e-04    4.50e-04    8.82e-06    8.82e-06    1.16e-05
-Gmb        2.17e-04    1.52e-04    1.04e-04    1.04e-04    1.13e-04
+Id:        6.96e-05    6.96e-05    3.48e-05    3.48e-05    3.81e-05
+Vgs:       6.35e-01    7.06e-01    6.59e-01    6.59e-01    6.70e-01
+Vds:       1.56e-01    8.48e-02    1.36e+00    1.36e+00    7.12e-01
+Vbs:       0.00e+00   -1.56e-01   -2.41e-01   -2.41e-01   -1.92e-01
+Vth:       5.26e-01    5.71e-01    5.88e-01    5.88e-01    5.78e-01
+Vdsat:     1.18e-01    1.32e-01    1.02e-01    1.02e-01    1.11e-01
+Gm:        7.25e-04    5.50e-04    4.23e-04    4.23e-04    4.38e-04
+Gds:       1.11e-04    4.70e-04    8.79e-06    8.79e-06    1.16e-05
+Gmb        2.17e-04    1.50e-04    1.04e-04    1.04e-04    1.13e-04
 Cbd:       0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
 Cbs:       0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
 Cgsov:     1.33e-15    1.33e-15    6.66e-16    6.66e-16    6.66e-16
 Cgdov:     1.33e-15    1.33e-15    6.66e-16    6.66e-16    6.66e-16
 Cgbov:     1.27e-16    1.27e-16    6.37e-17    6.37e-17    6.37e-17
-dQgdVgb:   7.14e-15    7.43e-15    3.40e-15    3.40e-15    3.49e-15
-dQgdVdb:  -1.38e-15   -1.71e-15   -6.60e-16   -6.60e-16   -6.61e-16
+dQgdVgb:   7.14e-15    7.45e-15    3.40e-15    3.40e-15    3.49e-15
+dQgdVdb:  -1.38e-15   -1.73e-15   -6.61e-16   -6.61e-16   -6.61e-16
 dQgdVsb:  -4.98e-15   -5.04e-15   -2.30e-15   -2.30e-15   -2.41e-15
-dQddVgb:  -1.49e-15   -2.07e-15   -6.67e-16   -6.67e-16   -6.69e-16
-dQddVdb:   1.48e-15    2.42e-15    6.66e-16    6.66e-16    6.67e-16
-dQddVsb:   5.67e-17   -1.42e-16    6.12e-19    6.12e-19    2.32e-18
-dQbdVgb:  -9.77e-16   -7.67e-16   -5.11e-16   -5.11e-16   -5.04e-16
-dQbdVdb:  -4.40e-17   -3.37e-16    1.14e-18    1.14e-18    9.47e-19
-dQbdVsb:  -8.23e-16   -6.69e-16   -3.14e-16   -3.14e-16   -3.39e-16
+dQddVgb:  -1.49e-15   -2.11e-15   -6.67e-16   -6.67e-16   -6.69e-16
+dQddVdb:   1.48e-15    2.50e-15    6.66e-16    6.66e-16    6.67e-16
+dQddVsb:   5.69e-17   -1.68e-16    6.09e-19    6.09e-19    2.32e-18
+dQbdVgb:  -9.76e-16   -7.54e-16   -5.11e-16   -5.11e-16   -5.04e-16
+dQbdVdb:  -4.50e-17   -3.62e-16    1.14e-18    1.14e-18    9.47e-19
+dQbdVsb:  -8.23e-16   -6.62e-16   -3.15e-16   -3.15e-16   -3.40e-16
 
-Name:       mn7.3       mn6.3       mn5.3       mn1.2       mn2.2
+Name:       mn7.2       mn6.2       mn5.2        mn3         mn2
 Model:      nch.9       nch.9       nch.9       nch.9       nch.9
-Id:        3.80e-05    3.80e-05    3.80e-05    6.96e-05    6.96e-05
-Vgs:       6.39e-01    6.69e-01    6.39e-01    6.35e-01    7.06e-01
-Vds:       1.92e-01    7.12e-01    1.92e-01    1.56e-01    8.48e-02
-Vbs:       0.00e+00   -1.92e-01    0.00e+00    0.00e+00   -1.56e-01
-Vth:       5.26e-01    5.78e-01    5.26e-01    5.26e-01    5.71e-01
-Vdsat:     1.19e-01    1.11e-01    1.19e-01    1.18e-01    1.32e-01
-Gm:        3.95e-04    4.37e-04    3.95e-04    7.25e-04    5.50e-04
-Gds:       4.24e-05    1.16e-05    4.24e-05    1.11e-04    4.70e-04
-Gmb        1.18e-04    1.13e-04    1.18e-04    2.17e-04    1.50e-04
+Id:        3.81e-05    3.81e-05    3.81e-05    1.16e-03    2.00e-04
+Vgs:       6.39e-01    6.70e-01    6.39e-01    8.62e-01    6.73e-01
+Vds:       1.92e-01    7.12e-01    1.92e-01    8.62e-01    4.46e-01
+Vbs:       0.00e+00   -1.92e-01    0.00e+00    0.00e+00   -1.89e-01
+Vth:       5.26e-01    5.78e-01    5.26e-01    5.25e-01    5.79e-01
+Vdsat:     1.20e-01    1.11e-01    1.20e-01    2.21e-01    1.12e-01
+Gm:        3.95e-04    4.38e-04    3.95e-04    4.68e-03    2.30e-03
+Gds:       4.25e-05    1.16e-05    4.25e-05    1.80e-04    8.37e-05
+Gmb        1.18e-04    1.13e-04    1.18e-04    1.36e-03    6.00e-04
 Cbd:       0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
 Cbs:       0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
-Cgsov:     6.66e-16    6.66e-16    6.66e-16    1.33e-15    1.33e-15
-Cgdov:     6.66e-16    6.66e-16    6.66e-16    1.33e-15    1.33e-15
-Cgbov:     6.37e-17    6.37e-17    6.37e-17    1.27e-16    1.27e-16
-dQgdVgb:   3.57e-15    3.49e-15    3.57e-15    7.14e-15    7.45e-15
-dQgdVdb:  -6.77e-16   -6.61e-16   -6.77e-16   -1.38e-15   -1.73e-15
-dQgdVsb:  -2.50e-15   -2.41e-15   -2.50e-15   -4.98e-15   -5.04e-15
-dQddVgb:  -7.16e-16   -6.69e-16   -7.16e-16   -1.49e-15   -2.11e-15
-dQddVdb:   7.08e-16    6.67e-16    7.08e-16    1.48e-15    2.50e-15
-dQddVsb:   2.34e-17    2.32e-18    2.34e-17    5.69e-17   -1.68e-16
-dQbdVgb:  -4.96e-16   -5.04e-16   -4.96e-16   -9.76e-16   -7.54e-16
-dQbdVdb:  -1.24e-17    9.47e-19   -1.24e-17   -4.50e-17   -3.62e-16
-dQbdVsb:  -4.11e-16   -3.39e-16   -4.11e-16   -8.23e-16   -6.62e-16
+Cgsov:     6.66e-16    6.66e-16    6.66e-16    3.67e-15    3.67e-15
+Cgdov:     6.66e-16    6.66e-16    6.66e-16    3.67e-15    3.67e-15
+Cgbov:     6.37e-17    6.37e-17    6.37e-17    3.50e-16    3.50e-16
+dQgdVgb:   3.57e-15    3.49e-15    3.57e-15    2.04e-14    1.92e-14
+dQgdVdb:  -6.77e-16   -6.61e-16   -6.77e-16   -3.65e-15   -3.64e-15
+dQgdVsb:  -2.50e-15   -2.41e-15   -2.50e-15   -1.49e-14   -1.34e-14
+dQddVgb:  -7.16e-16   -6.69e-16   -7.16e-16   -3.68e-15   -3.70e-15
+dQddVdb:   7.08e-16    6.67e-16    7.08e-16    3.68e-15    3.68e-15
+dQddVsb:   2.34e-17    2.32e-18    2.34e-17    1.15e-17    3.11e-17
+dQbdVgb:  -4.96e-16   -5.04e-16   -4.96e-16   -2.84e-15   -2.76e-15
+dQbdVdb:  -1.24e-17    9.47e-19   -1.24e-17    1.06e-18    2.03e-18
+dQbdVsb:  -4.11e-16   -3.40e-16   -4.11e-16   -2.09e-15   -1.89e-15
 
-Name:       mn3.2       mn4.2       mn8.2       mn7.2       mn6.2
-Model:      nch.9       nch.9       nch.9       nch.9       nch.9
-Id:        3.48e-05    3.48e-05    3.81e-05    3.81e-05    3.81e-05
-Vgs:       6.59e-01    6.59e-01    6.70e-01    6.39e-01    6.70e-01
-Vds:       1.36e+00    1.36e+00    7.12e-01    1.92e-01    7.12e-01
-Vbs:      -2.41e-01   -2.41e-01   -1.92e-01    0.00e+00   -1.92e-01
-Vth:       5.88e-01    5.88e-01    5.78e-01    5.26e-01    5.78e-01
-Vdsat:     1.02e-01    1.02e-01    1.11e-01    1.20e-01    1.11e-01
-Gm:        4.23e-04    4.23e-04    4.38e-04    3.95e-04    4.38e-04
-Gds:       8.79e-06    8.79e-06    1.16e-05    4.25e-05    1.16e-05
-Gmb        1.04e-04    1.04e-04    1.13e-04    1.18e-04    1.13e-04
+Name:        mn1        mp4.2       mp3.2       mp2.2       mp1.2
+Model:      nch.9       pch.9       pch.9       pch.9       pch.9
+Id:        2.00e-04   -3.81e-05   -7.29e-05   -3.81e-05   -7.29e-05
+Vgs:       6.35e-01   -6.60e-01   -6.09e-01   -6.60e-01   -6.09e-01
+Vds:       1.89e-01   -7.00e-01   -1.95e-01   -7.00e-01   -1.95e-01
+Vbs:       0.00e+00    1.95e-01    0.00e+00    1.95e-01    0.00e+00
+Vth:       5.26e-01   -5.56e-01   -4.95e-01   -5.56e-01   -4.95e-01
+Vdsat:     1.18e-01   -1.28e-01   -1.32e-01   -1.28e-01   -1.32e-01
+Gm:        2.12e-03    4.65e-04    8.28e-04    4.65e-04    8.28e-04
+Gds:       2.27e-04    9.92e-06    6.50e-05    9.92e-06    6.50e-05
+Gmb        6.31e-04    1.45e-04    2.84e-04    1.45e-04    2.84e-04
 Cbd:       0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
 Cbs:       0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
-Cgsov:     6.66e-16    6.66e-16    6.66e-16    6.66e-16    6.66e-16
-Cgdov:     6.66e-16    6.66e-16    6.66e-16    6.66e-16    6.66e-16
-Cgbov:     6.37e-17    6.37e-17    6.37e-17    6.37e-17    6.37e-17
-dQgdVgb:   3.40e-15    3.40e-15    3.49e-15    3.57e-15    3.49e-15
-dQgdVdb:  -6.61e-16   -6.61e-16   -6.61e-16   -6.77e-16   -6.61e-16
-dQgdVsb:  -2.30e-15   -2.30e-15   -2.41e-15   -2.50e-15   -2.41e-15
-dQddVgb:  -6.67e-16   -6.67e-16   -6.69e-16   -7.16e-16   -6.69e-16
-dQddVdb:   6.66e-16    6.66e-16    6.67e-16    7.08e-16    6.67e-16
-dQddVsb:   6.09e-19    6.09e-19    2.32e-18    2.34e-17    2.32e-18
-dQbdVgb:  -5.11e-16   -5.11e-16   -5.04e-16   -4.96e-16   -5.04e-16
-dQbdVdb:   1.14e-18    1.14e-18    9.47e-19   -1.24e-17    9.47e-19
-dQbdVsb:  -3.15e-16   -3.15e-16   -3.40e-16   -4.11e-16   -3.40e-16
+Cgsov:     3.67e-15    3.94e-15    7.88e-15    3.94e-15    7.88e-15
+Cgdov:     3.67e-15    3.94e-15    7.88e-15    3.94e-15    7.88e-15
+Cgbov:     3.50e-16    5.08e-16    1.02e-15    5.08e-16    1.02e-15
+dQgdVgb:   1.96e-14    1.96e-14    3.98e-14    1.96e-14    3.98e-14
+dQgdVdb:  -3.73e-15   -3.91e-15   -7.95e-15   -3.91e-15   -7.95e-15
+dQgdVsb:  -1.37e-14   -1.43e-14   -2.90e-14   -1.43e-14   -2.90e-14
+dQddVgb:  -3.94e-15   -3.95e-15   -8.34e-15   -3.95e-15   -8.34e-15
+dQddVdb:   3.89e-15    3.95e-15    8.27e-15    3.95e-15    8.27e-15
+dQddVsb:   1.32e-16    1.33e-17    2.38e-16    1.33e-17    2.38e-16
+dQbdVgb:  -2.73e-15   -2.92e-15   -5.84e-15   -2.92e-15   -5.84e-15
+dQbdVdb:  -6.77e-17    3.28e-18   -1.25e-16    3.28e-18   -1.25e-16
+dQbdVsb:  -2.26e-15   -1.21e-15   -3.08e-15   -1.21e-15   -3.08e-15
 
-Name:       mn5.2        mn3         mn2         mn1        mp4.3
-Model:      nch.9       nch.9       nch.9       nch.9       pch.9
-Id:        3.81e-05    1.16e-03    2.00e-04    2.00e-04   -3.80e-05
-Vgs:       6.39e-01    8.62e-01    6.73e-01    6.35e-01   -6.59e-01
-Vds:       1.92e-01    8.62e-01    4.46e-01    1.89e-01   -7.01e-01
-Vbs:       0.00e+00    0.00e+00   -1.89e-01    0.00e+00    1.96e-01
-Vth:       5.26e-01    5.25e-01    5.79e-01    5.26e-01   -5.56e-01
-Vdsat:     1.20e-01    2.21e-01    1.12e-01    1.18e-01   -1.28e-01
-Gm:        3.95e-04    4.68e-03    2.30e-03    2.12e-03    4.65e-04
-Gds:       4.25e-05    1.80e-04    8.37e-05    2.27e-04    9.91e-06
-Gmb        1.18e-04    1.36e-03    6.00e-04    6.31e-04    1.44e-04
-Cbd:       0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
-Cbs:       0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
-Cgsov:     6.66e-16    3.67e-15    3.67e-15    3.67e-15    3.94e-15
-Cgdov:     6.66e-16    3.67e-15    3.67e-15    3.67e-15    3.94e-15
-Cgbov:     6.37e-17    3.50e-16    3.50e-16    3.50e-16    5.08e-16
-dQgdVgb:   3.57e-15    2.04e-14    1.92e-14    1.96e-14    1.96e-14
-dQgdVdb:  -6.77e-16   -3.65e-15   -3.64e-15   -3.73e-15   -3.91e-15
-dQgdVsb:  -2.50e-15   -1.49e-14   -1.34e-14   -1.37e-14   -1.43e-14
-dQddVgb:  -7.16e-16   -3.68e-15   -3.70e-15   -3.94e-15   -3.95e-15
-dQddVdb:   7.08e-16    3.68e-15    3.68e-15    3.89e-15    3.95e-15
-dQddVsb:   2.34e-17    1.15e-17    3.11e-17    1.32e-16    1.32e-17
-dQbdVgb:  -4.96e-16   -2.84e-15   -2.76e-15   -2.73e-15   -2.92e-15
-dQbdVdb:  -1.24e-17    1.06e-18    2.03e-18   -6.77e-17    3.28e-18
-dQbdVsb:  -4.11e-16   -2.09e-15   -1.89e-15   -2.26e-15   -1.21e-15
-
-Name:       mp3.3       mp2.3       mp1.3       mp4.2       mp3.2
-Model:      pch.9       pch.9       pch.9       pch.9       pch.9
-Id:       -7.29e-05   -3.80e-05   -7.29e-05   -3.81e-05   -7.29e-05
-Vgs:      -6.09e-01   -6.59e-01   -6.09e-01   -6.60e-01   -6.09e-01
-Vds:      -1.96e-01   -7.01e-01   -1.96e-01   -7.00e-01   -1.95e-01
-Vbs:       0.00e+00    1.96e-01    0.00e+00    1.95e-01    0.00e+00
-Vth:      -4.95e-01   -5.56e-01   -4.95e-01   -5.56e-01   -4.95e-01
-Vdsat:    -1.32e-01   -1.28e-01   -1.32e-01   -1.28e-01   -1.32e-01
-Gm:        8.28e-04    4.65e-04    8.28e-04    4.65e-04    8.28e-04
-Gds:       6.50e-05    9.91e-06    6.50e-05    9.92e-06    6.50e-05
-Gmb        2.84e-04    1.44e-04    2.84e-04    1.45e-04    2.84e-04
-Cbd:       0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
-Cbs:       0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
-Cgsov:     7.88e-15    3.94e-15    7.88e-15    3.94e-15    7.88e-15
-Cgdov:     7.88e-15    3.94e-15    7.88e-15    3.94e-15    7.88e-15
-Cgbov:     1.02e-15    5.08e-16    1.02e-15    5.08e-16    1.02e-15
-dQgdVgb:   3.98e-14    1.96e-14    3.98e-14    1.96e-14    3.98e-14
-dQgdVdb:  -7.95e-15   -3.91e-15   -7.95e-15   -3.91e-15   -7.95e-15
-dQgdVsb:  -2.90e-14   -1.43e-14   -2.90e-14   -1.43e-14   -2.90e-14
-dQddVgb:  -8.34e-15   -3.95e-15   -8.34e-15   -3.95e-15   -8.34e-15
-dQddVdb:   8.27e-15    3.95e-15    8.27e-15    3.95e-15    8.27e-15
-dQddVsb:   2.38e-16    1.32e-17    2.38e-16    1.33e-17    2.38e-16
-dQbdVgb:  -5.84e-15   -2.92e-15   -5.84e-15   -2.92e-15   -5.84e-15
-dQbdVdb:  -1.25e-16    3.28e-18   -1.25e-16    3.28e-18   -1.25e-16
-dQbdVsb:  -3.08e-15   -1.21e-15   -3.08e-15   -1.21e-15   -3.08e-15
-
-Name:       mp2.2       mp1.2        mp3         mp2         mp1
-Model:      pch.9       pch.9       pch.9       pch.9       pch.9
-Id:       -3.81e-05   -7.29e-05   -1.50e-03   -2.00e-04   -2.00e-04
-Vgs:      -6.60e-01   -6.09e-01   -8.55e-01   -6.62e-01   -6.09e-01
-Vds:      -7.00e-01   -1.95e-01   -8.55e-01   -4.16e-01   -1.93e-01
-Vbs:       1.95e-01    0.00e+00    0.00e+00    1.93e-01    0.00e+00
-Vth:      -5.56e-01   -4.95e-01   -4.92e-01   -5.57e-01   -4.95e-01
-Vdsat:    -1.28e-01   -1.32e-01   -2.89e-01   -1.29e-01   -1.32e-01
-Gm:        4.65e-04    8.28e-04    6.85e-03    2.42e-03    2.27e-03
-Gds:       9.92e-06    6.50e-05    2.66e-04    7.54e-05    1.83e-04
-Gmb        1.45e-04    2.84e-04    2.33e-03    7.58e-04    7.79e-04
-Cbd:       0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
-Cbs:       0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
-Cgsov:     3.94e-15    7.88e-15    2.17e-14    2.17e-14    2.17e-14
-Cgdov:     3.94e-15    7.88e-15    2.17e-14    2.17e-14    2.17e-14
-Cgbov:     5.08e-16    1.02e-15    2.79e-15    2.79e-15    2.79e-15
-dQgdVgb:   1.96e-14    3.98e-14    1.14e-13    1.08e-13    1.09e-13
-dQgdVdb:  -3.91e-15   -7.95e-15   -2.15e-14   -2.15e-14   -2.19e-14
-dQgdVsb:  -1.43e-14   -2.90e-14   -8.67e-14   -7.89e-14   -7.97e-14
-dQddVgb:  -3.95e-15   -8.34e-15   -2.18e-14   -2.19e-14   -2.30e-14
-dQddVdb:   3.95e-15    8.27e-15    2.17e-14    2.18e-14    2.28e-14
-dQddVsb:   1.33e-17    2.38e-16    6.15e-17    1.93e-16    6.66e-16
-dQbdVgb:  -2.92e-15   -5.84e-15   -1.70e-14   -1.60e-14   -1.60e-14
-dQbdVdb:   3.28e-18   -1.25e-16    2.22e-18   -7.34e-18   -3.59e-16
-dQbdVsb:  -1.21e-15   -3.08e-15   -7.09e-15   -6.74e-15   -8.48e-15
+Name:        mp3         mp2         mp1
+Model:      pch.9       pch.9       pch.9
+Id:       -1.50e-03   -2.00e-04   -2.00e-04
+Vgs:      -8.55e-01   -6.62e-01   -6.09e-01
+Vds:      -8.55e-01   -4.16e-01   -1.93e-01
+Vbs:       0.00e+00    1.93e-01    0.00e+00
+Vth:      -4.92e-01   -5.57e-01   -4.95e-01
+Vdsat:    -2.89e-01   -1.29e-01   -1.32e-01
+Gm:        6.85e-03    2.42e-03    2.27e-03
+Gds:       2.66e-04    7.54e-05    1.83e-04
+Gmb        2.33e-03    7.58e-04    7.79e-04
+Cbd:       0.00e+00    0.00e+00    0.00e+00
+Cbs:       0.00e+00    0.00e+00    0.00e+00
+Cgsov:     2.17e-14    2.17e-14    2.17e-14
+Cgdov:     2.17e-14    2.17e-14    2.17e-14
+Cgbov:     2.79e-15    2.79e-15    2.79e-15
+dQgdVgb:   1.14e-13    1.08e-13    1.09e-13
+dQgdVdb:  -2.15e-14   -2.15e-14   -2.19e-14
+dQgdVsb:  -8.67e-14   -7.89e-14   -7.97e-14
+dQddVgb:  -2.18e-14   -2.19e-14   -2.30e-14
+dQddVdb:   2.17e-14    2.18e-14    2.28e-14
+dQddVsb:   6.15e-17    1.93e-16    6.66e-16
+dQbdVgb:  -1.70e-14   -1.60e-14   -1.60e-14
+dQbdVdb:   2.22e-18   -7.34e-18   -3.59e-16
+dQbdVsb:  -7.09e-15   -6.74e-15   -8.48e-15
 
 
 
-Date: Sat Feb 14 21:29:21 2026
-Total elapsed time: 0.097 seconds.
+Date: Sat Feb 14 21:36:51 2026
+Total elapsed time: 0.102 seconds.
 
 tnom = 27
 temp = 27
 method = trap
-totiter = 511
+totiter = 486
 traniter = 0
 tranpoints = 0
 accept = 0
 rejected = 0
-matrix size = 74
-fillins = 117
+matrix size = 47
+fillins = 49
 solver = Normal
-Thread vector: 10.1/5.6[2] 0.0/0.0[0] 0.7/0.7[1] 0.3/1.1[1]  2592/500
-Matrix Compiler1: 12.23 KB object code size
-Matrix Compiler2: 8.84 KB object code size  0.5/0.7/[0.4]
+Matrix Compiler1: 5.28 KB object code size
+Matrix Compiler2: 5.02 KB object code size  0.3/0.4/[0.3]
 
