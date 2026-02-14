@@ -1,0 +1,28 @@
+Questionable use of curly braces in "r1 n001 vop {rbig}"
+    Error: undefined symbol in: "[rbig]"
+Questionable use of curly braces in "r2 von n001 {rbig}"
+    Error: undefined symbol in: "[rbig]"
+Questionable use of curly braces in "c7 von vbcm {cfb}"
+    Error: undefined symbol in: "[cfb]"
+Questionable use of curly braces in "c8 vop vbcm {cfb}"
+    Error: undefined symbol in: "[cfb]"
+Circuit: * Z:\home\danieltyukov\workspace\tud\tud-analog-cmos-design-1\hw2\discrete_time_fully_differential_folded_cascode_amplifier.asc
+
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter ACM
+Ignoring BSIM parameter LDIF
+Ignoring BSIM parameter HDIF
+Ignoring BSIM parameter TLEV
+Ignoring BSIM parameter TLEVC
+Ignoring BSIM parameter CALCACM
+Ignoring BSIM parameter SFVTFLAGl
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter ACM
+Ignoring BSIM parameter LDIF
+Ignoring BSIM parameter HDIF
+Ignoring BSIM parameter TLEV
+Ignoring BSIM parameter TLEVC
+Ignoring BSIM parameter CALCACM
+Ignoring BSIM parameter SFVTFLAGl
