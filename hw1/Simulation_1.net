@@ -1,7 +1,7 @@
 * Z:\home\danieltyukov\workspace\tud\tud-analog-cmos-design-1\hw1\Simulation_1.asc
 Mp1 Vsp Vbp Vdd Vdd pch l=L w=W m=Mp
 Mp2 Vbp Vcp Vsp Vdd pch l=L w=W m=Mp
-Mp3 Vcp Vcp Vdd Vdd pch l=L w=W m=Mp
+Mp3 Vcp Vcp Vdd Vdd pch l={L} w={W} m={Mp}
 Mn1 Vsn 0 0 0 nch l=L w=W m={Mn}
 Mn2 0 Vcn Vsn 0 nch l=L w=W m={Mn}
 Mn3 Vcn Vcn 0 0 nch l=L w=W m={Mn}
