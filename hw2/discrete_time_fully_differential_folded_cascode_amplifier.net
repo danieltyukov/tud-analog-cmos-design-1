@@ -1,10 +1,10 @@
 * Z:\home\danieltyukov\workspace\tud\tud-analog-cmos-design-1\hw2\discrete_time_fully_differential_folded_cascode_amplifier.asc
-Mp1 Vsp Vbp Vddb Vddb pch l=L w=W m=Mp
-Mp2 Vbp Vcp Vsp Vddb pch l=L w=W m=Mp
-Mp3 Vcp Vcp Vddb Vddb pch l=L w=W m=Mp
-Mn1 Vsn Vbn 0 0 nch l=L w=W m={Mn}
-Mn2 Vbn Vcn Vsn 0 nch l=L w=W m={Mn}
-Mn3 Vcn Vcn 0 0 nch l=L w=W m={Mn}
+Mp1 Vsp Vbp Vddb Vddb pch l={L} w={W} m={Mp}
+Mp2 Vbp Vcp Vsp Vddb pch l={L} w={W} m={Mp}
+Mp3 Vcp Vcp Vddb Vddb pch l={L} w={W} m={Mp}
+Mn1 Vsn Vbn 0 0 nch l={L} w={W} m={Mn}
+Mn2 Vbn Vcn Vsn 0 nch l={L} w={W} m={Mn}
+Mn3 Vcn Vcn 0 0 nch l={L} w={W} m={Mn}
 Ibm Vbp Vbn {Ibm}
 Ibn Vddb Vcn {Ibm*Rn}
 Ibp Vcp 0 {Ibm*Rp}
@@ -16,27 +16,105 @@ C3 Vdd Vcp {Cbig}
 C4 0 Vbn {Cbig}
 C5 0 Vsn {Cbig}
 C6 0 Vcn {Cbig}
-E1 N001 Vbcm N002 Vbn 1
-R1 N001 Vop {Rbig}
-R2 Von N001 {Rbig}
-C7 Von Vbcm {Cfb}
-C8 Vop Vbcm {Cfb}
-Vcm N002 0 0.9
+E1 N002 Vbcm N003 Vbn 1
+R1 N002 Voutn {Rbig}
+R2 Voutp N002 {Rbig}
+C7 Voutp Vbcm {Cfb}
+C8 Voutn Vbcm {Cfb}
+Vcm N003 0 0.9
+E2 N005 Vpl Vgpp Vgpn {Aadd/2}
+E3 Vpr N005 Vgpp Vgpn {Aadd/2}
+E4 N005 0 Vcp 0 1
+E5 N006 Vnl Vgnp Vgnn {Aadd/2}
+E6 Vnr N006 Vgnp Vgnn {Aadd/2}
+E7 N006 0 Vcn 0 1
+Mp1.2 Vgpn Vbp Vdd Vdd pch l={L} w={W} m={Mp13}
+Mn5.2 Vgnn Vbcm 0 0 nch l={L} w={W} m={Mn56}
+Mp2.2 Voutp Vpr Vgpn Vdd pch l={L} w={W} m={Mp24}
+Mn6.2 Voutp Vnr Vgnn 0 nch l={L} w={W} m={Mn56}
+Mp3.2 Vgpp Vbp Vdd Vdd pch l={L} w={W} m={Mp13}
+Mn7.2 Vgnp Vbcm 0 0 nch l={L} w={W} m={Mn78}
+Mp4.2 Voutn Vpl Vgpp Vdd pch l={L} w={W} m={Mp24}
+Mn8.2 Voutn Vnl Vgnp 0 nch l={L} w={W} m={Mn78}
+Mn4.2 Vgpp Vin N001 0 nch l={L} w={W} m={Mn34}
+Mn3.2 Vgpn Vip N001 0 nch l={L} w={W} m={Mn34}
+Mn2.2 N001 Vbcn N004 0 nch l={L} w={W} m={Mn12}
+Mn1.2 N004 Vbn 0 0 nch l={L} w={W} m={Mn12}
+Mp1.3 Vgpn_rep Vbp Vdd Vdd pch l={L} w={W} m={Mp13}
+Mn5.3 Vgnn_rep Vbcm_rep 0 0 nch l={L} w={W} m={Mn56}
+Mp2.3 Voutp2 Vpr_rep Vgpn_rep Vdd pch l={L} w={W} m={Mp24}
+Mn6.3 Voutp2 Vnr_rep Vgnn_rep 0 nch l={L} w={W} m={Mn56}
+Mp3.3 Vgpp_rep Vbp Vdd Vdd pch l={L} w={W} m={Mp13}
+Mn7.3 Vgnp_rep Vbcm_rep 0 0 nch l={L} w={W} m={Mn78}
+Mp4.3 Voutn2 Vpl_rep Vgpp_rep Vdd pch l={L} w={W} m={Mp24}
+Mn8.3 Voutn2 Vnl_rep Vgnp_rep 0 nch l={L} w={W} m={Mn78}
+Mn4.3 Vgpp_rep Vin_rep N011 0 nch l={L} w={W} m={Mn34}
+Mn3.3 Vgpn_rep Vinpn N011 0 nch l={L} w={W} m={Mn34}
+Mn2.3 N011 Vbcn N013 0 nch l={L} w={W} m={Mn12}
+Mn1.3 N013 Vbn 0 0 nch l={L} w={W} m={Mn12}
+E8 N009 Vpl_rep Vgpp_rep Vgpn_rep {Aadd/2}
+E9 Vpr_rep N009 Vgpp_rep Vgpn_rep {Aadd/2}
+E10 N009 0 Vcp 0 1
+E11 N010 Vnl_rep Vgnp_rep Vgnn_rep {Aadd/2}
+E12 Vnr_rep N010 Vgnp_rep Vgnn_rep {Aadd/2}
+E13 N010 0 Vcn 0 1
+E14 N007 Vbcm_rep N008 Vbn 1
+R3 N007 Voutn2 {Rbig}
+R4 Voutp2 N007 {Rbig}
+C9 Voutp2 Vbcm_rep {Cfb}
+C10 Voutn2 Vbcm_rep {Cfb}
+Vcm1 N008 0 0.9
+E15 Vbcn 0 Vcn 0 1
+C11 0 Voutn {Cload}
+C12 0 Voutp {Cload}
+L1 Vin_rep Vin {Lbig}
+L2 Vip Vin_rep {Lbig}
+R5 Voutp Vin_rep {Rfb}
+C13 Voutp Vin_rep {Cfb}
+R6 Vin_rep Voutn {Rfb}
+C14 Vin_rep Voutn {Cfb}
+R7 N012 Vin_rep {Rin}
+C15 N012 Vin_rep {Cin}
+R8 N012 Vin_rep {Rin}
+C16 N012 Vin_rep {Cin}
+V3 Vin N014 AC 0.5 180
+V4 Vip N014 AC 0.5 180
+V5 N014 0 0.9
+V6 N012 0 0.9
+C17 0 Voutn2 {Cload}
+C18 0 Voutp2 {Cload}
+R9 Vin_rep Voutn2 {Rfb}
+R10 Vin_rep Voutp2 {Rfb}
 .model NMOS NMOS
 .model PMOS PMOS
 .lib C:\users\danieltyukov\Documents\LTspiceXVII\lib\cmp\standard.mos
-.param W=1u L=0.18u Mp=60 Mn=11 Ibm=200u Rn=5.8 Rp=7.5
-;step param Mn list 5,10,15
-.op
-;dc param Rn 3 9 0.1
-.lib 'C:\Program Files\LTC\LTspiceXVII\lib\cmp\log018.l' TT
-;dc param Rp 3 12 0.1
-;dc Vop 0 1.8 0.01
+.param W=1u L=0.18u Mp=60 Mn=11 Ibm=200u Rn=5.8 Rp=7.5 mp_ratio={Mp/Mn}
+.lib 'C:\Program Files\LTC\LTspiceXVII\lib\cmp\logic018 no1of.l' TT
 * Biasing Circuit
 * Biasing Voltage Source
 * Voltage Source
-.param Cbig=1u
+.param Cbig=1000n Lbig=1000 Rbig=100G Rin=100G
 * Decoupling Capacitors
-* Ideal CMFB
+* Ideal CMFB Unloaded
+* Ideal Gain-Boosting PMOS\nUnloaded
+* Ideal Gain-Boosting NMOS\nUnloaded
+* Ideal\nGain-Boosting\nPMOS
+* Ideal\nCMFB
+* Ideal\nGain-Boosting\nNMOS
+* OpAmp with ideal Gain-Boosting Unloaded
+* Ideal\nGain-Boosting\nPMOS
+* Ideal\nCMFB
+* Ideal\nGain-Boosting\nNMOS
+* OpAmp with ideal Gain-Boosting Loaded
+* Ideal Gain-Boosting PMOS\nLoaded
+* Ideal Gain-Boosting NMOS\nLoaded
+* Ideal CMFB Loaded
+* Vsp & Vsn are used for ration & ratiop determination, unused in the opamp
+* Vbcn
+* OpAmp in Feedback
+.param Aadd=100 Cfb={Cin/8} Rfb={Rin*8} Cload={Cin}
+.param Mn12={4*ScaleA} Mn56={2*ScaleA} Mn78={2*ScaleA} Mp13={4*ScaleA*mp_ratio} Mp24={2*ScaleA*mp_ratio}
+.param Mn34={2*ScaleA} ScaleA=1 Cin=1.5p
+.op
 .backanno
 .end
