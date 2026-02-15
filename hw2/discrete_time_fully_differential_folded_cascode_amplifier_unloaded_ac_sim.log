@@ -95,24 +95,24 @@ Gmin = 0
 Gmin stepping succeeded in finding the operating point.
 
 
-a_dc: mag(v(voutp,voutn))=(90.9268dB,0°) at 10
-a_dc_db: 20*log10(a_dc)=(39.1738dB,0°)
-abeta_dc: mag(v(vinpp,vinpn))=(71.842dB,0°) at 10
-abeta_dc_db: 20*log10(abeta_dc)=(37.1276dB,0°)
-bw_cl_open: mag(v(vinpp,vinpn))=1 AT 372429
-bw_cl_hz: bw_cl_open=(111.421dB,0°)
-tau_cl_open: 1/(2*3.14159265*bw_cl_open)=(-127.384dB,0°)
-pm_phase: ph(v(vinpp,vinpn))=(39.0857dB,180°) at 372429
+a_dc: mag(v(voutp,voutn))=(91.1153dB,0°) at 10
+a_dc_db: 20*log10(a_dc)=(39.1918dB,0°)
+abeta_dc: mag(v(vinpp,vinpn))=(72.0306dB,0°) at 10
+abeta_dc_db: 20*log10(abeta_dc)=(37.1503dB,0°)
+bw_cl_open: mag(v(vinpp,vinpn))=1 AT 329348
+bw_cl_hz: bw_cl_open=(110.353dB,0°)
+tau_cl_open: 1/(2*3.14159265*bw_cl_open)=(-126.317dB,0°)
+pm_phase: ph(v(vinpp,vinpn))=(39.0857dB,180°) at 329348
 phase_margin: 180+pm_phase=(39.084dB,0°)
 
 
-Date: Sun Feb 15 11:45:00 2026
-Total elapsed time: 0.233 seconds.
+Date: Sun Feb 15 15:14:23 2026
+Total elapsed time: 0.231 seconds.
 
 tnom = 27
 temp = 27
 method = trap
-totiter = 471
+totiter = 475
 traniter = 0
 tranpoints = 0
 accept = 0
