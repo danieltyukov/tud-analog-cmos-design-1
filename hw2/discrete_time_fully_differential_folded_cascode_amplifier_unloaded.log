@@ -95,10 +95,19 @@ Gmin = 0
 Gmin stepping succeeded in finding the operating point.
 
 
+a_dc: mag(v(voutp,voutn))=(83.9862dB,0°) at 10
+a_dc_db: 20*log10(a_dc)=(38.4842dB,0°)
+abeta_dc: mag(v(vinpp,vinpn))=(64.9027dB,0°) at 10
+abeta_dc_db: 20*log10(abeta_dc)=(36.2453dB,0°)
+bw_cl_open: mag(v(vinpp,vinpn))=1 AT 4.0179e+006
+bw_cl_hz: bw_cl_open=(132.08dB,0°)
+tau_cl_open: 1/(2*3.14159265*bw_cl_open)=(-148.044dB,0°)
+pm_phase: ph(v(vinpp,vinpn))=(39.0869dB,180°) at 4.0179e+006
+phase_margin: 180+pm_phase=(39.0828dB,0°)
 
 
-Date: Sun Feb 15 01:29:16 2026
-Total elapsed time: 0.225 seconds.
+Date: Sun Feb 15 01:36:48 2026
+Total elapsed time: 0.244 seconds.
 
 tnom = 27
 temp = 27
