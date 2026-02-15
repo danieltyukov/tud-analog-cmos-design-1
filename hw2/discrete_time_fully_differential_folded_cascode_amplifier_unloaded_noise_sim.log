@@ -75,44 +75,255 @@ Warning: Pd = 0 is less than W.
 Warning: Ps = 0 is less than W.
 Warning: Pd = 0 is less than W.
 Warning: Ps = 0 is less than W.
-Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
-Starting Gmin stepping
-Gmin = 10
-Gmin = 1.07374
-Gmin = 0.115292
-Gmin = 0.0123794
-Gmin = 0.00132923
-Gmin = 0.000142725
-Gmin = 1.5325e-005
-Gmin = 1.6455e-006
-Gmin = 1.76685e-007
-Gmin = 1.89714e-008
-Gmin = 2.03704e-009
-Gmin = 2.18725e-010
-Gmin = 2.34854e-011
-Gmin = 2.52173e-012
-Gmin = 2.70769e-013
-Gmin = 0
-Gmin stepping succeeded in finding the operating point.
+Direct Newton iteration for .op point succeeded.
+.step scalea=0.25 ibm=0.0002 cin=4e-012
+.step scalea=0.5 ibm=0.0002 cin=4e-012
+.step scalea=1 ibm=0.0002 cin=4e-012
+.step scalea=0.25 ibm=0.0004 cin=4e-012
+.step scalea=0.5 ibm=0.0004 cin=4e-012
+.step scalea=1 ibm=0.0004 cin=4e-012
+.step scalea=0.25 ibm=0.0006 cin=4e-012
+.step scalea=0.5 ibm=0.0006 cin=4e-012
+.step scalea=1 ibm=0.0006 cin=4e-012
+.step scalea=0.25 ibm=0.0008 cin=4e-012
+.step scalea=0.5 ibm=0.0008 cin=4e-012
+.step scalea=1 ibm=0.0008 cin=4e-012
+.step scalea=0.25 ibm=0.001 cin=4e-012
+.step scalea=0.5 ibm=0.001 cin=4e-012
+.step scalea=1 ibm=0.001 cin=4e-012
+.step scalea=0.25 ibm=0.0002 cin=8e-012
+.step scalea=0.5 ibm=0.0002 cin=8e-012
+.step scalea=1 ibm=0.0002 cin=8e-012
+.step scalea=0.25 ibm=0.0004 cin=8e-012
+.step scalea=0.5 ibm=0.0004 cin=8e-012
+.step scalea=1 ibm=0.0004 cin=8e-012
+.step scalea=0.25 ibm=0.0006 cin=8e-012
+.step scalea=0.5 ibm=0.0006 cin=8e-012
+.step scalea=1 ibm=0.0006 cin=8e-012
+.step scalea=0.25 ibm=0.0008 cin=8e-012
+.step scalea=0.5 ibm=0.0008 cin=8e-012
+.step scalea=1 ibm=0.0008 cin=8e-012
+.step scalea=0.25 ibm=0.001 cin=8e-012
+.step scalea=0.5 ibm=0.001 cin=8e-012
+.step scalea=1 ibm=0.001 cin=8e-012
+.step scalea=0.25 ibm=0.0002 cin=1.2e-011
+.step scalea=0.5 ibm=0.0002 cin=1.2e-011
+.step scalea=1 ibm=0.0002 cin=1.2e-011
+.step scalea=0.25 ibm=0.0004 cin=1.2e-011
+.step scalea=0.5 ibm=0.0004 cin=1.2e-011
+.step scalea=1 ibm=0.0004 cin=1.2e-011
+.step scalea=0.25 ibm=0.0006 cin=1.2e-011
+.step scalea=0.5 ibm=0.0006 cin=1.2e-011
+.step scalea=1 ibm=0.0006 cin=1.2e-011
+.step scalea=0.25 ibm=0.0008 cin=1.2e-011
+.step scalea=0.5 ibm=0.0008 cin=1.2e-011
+.step scalea=1 ibm=0.0008 cin=1.2e-011
+.step scalea=0.25 ibm=0.001 cin=1.2e-011
+.step scalea=0.5 ibm=0.001 cin=1.2e-011
+.step scalea=1 ibm=0.001 cin=1.2e-011
+.step scalea=0.25 ibm=0.0002 cin=1.6e-011
+.step scalea=0.5 ibm=0.0002 cin=1.6e-011
+.step scalea=1 ibm=0.0002 cin=1.6e-011
+.step scalea=0.25 ibm=0.0004 cin=1.6e-011
+.step scalea=0.5 ibm=0.0004 cin=1.6e-011
+.step scalea=1 ibm=0.0004 cin=1.6e-011
+.step scalea=0.25 ibm=0.0006 cin=1.6e-011
+.step scalea=0.5 ibm=0.0006 cin=1.6e-011
+.step scalea=1 ibm=0.0006 cin=1.6e-011
+.step scalea=0.25 ibm=0.0008 cin=1.6e-011
+.step scalea=0.5 ibm=0.0008 cin=1.6e-011
+.step scalea=1 ibm=0.0008 cin=1.6e-011
+.step scalea=0.25 ibm=0.001 cin=1.6e-011
+.step scalea=0.5 ibm=0.001 cin=1.6e-011
+.step scalea=1 ibm=0.001 cin=1.6e-011
+.step scalea=0.25 ibm=0.0002 cin=2e-011
+.step scalea=0.5 ibm=0.0002 cin=2e-011
+.step scalea=1 ibm=0.0002 cin=2e-011
+.step scalea=0.25 ibm=0.0004 cin=2e-011
+.step scalea=0.5 ibm=0.0004 cin=2e-011
+.step scalea=1 ibm=0.0004 cin=2e-011
+.step scalea=0.25 ibm=0.0006 cin=2e-011
+.step scalea=0.5 ibm=0.0006 cin=2e-011
+.step scalea=1 ibm=0.0006 cin=2e-011
+.step scalea=0.25 ibm=0.0008 cin=2e-011
+.step scalea=0.5 ibm=0.0008 cin=2e-011
+.step scalea=1 ibm=0.0008 cin=2e-011
+.step scalea=0.25 ibm=0.001 cin=2e-011
+.step scalea=0.5 ibm=0.001 cin=2e-011
+.step scalea=1 ibm=0.001 cin=2e-011
 
 
-vnoise_rms: INTEG(v(onoise))=6.90493e-005 FROM 10000 TO 1e+011
-snr_achieved: 20*log10(0.8485/vnoise_rms)=81.7898
+Measurement: vnoise_rms
+  step	INTEG(v(onoise))	FROM	TO
+     1	0.000176907	10000	1e+011
+     2	0.000179194	10000	1e+011
+     3	0.000181907	10000	1e+011
+     4	0.000165164	10000	1e+011
+     5	0.000167497	10000	1e+011
+     6	0.000170357	10000	1e+011
+     7	0.000159079	10000	1e+011
+     8	0.000161549	10000	1e+011
+     9	0.000164551	10000	1e+011
+    10	0.000155228	10000	1e+011
+    11	0.00015771	10000	1e+011
+    12	0.000160709	10000	1e+011
+    13	0.000152252	10000	1e+011
+    14	0.000154706	10000	1e+011
+    15	0.000157668	10000	1e+011
+    16	0.000123223	10000	1e+011
+    17	0.000125041	10000	1e+011
+    18	0.000127053	10000	1e+011
+    19	0.000115247	10000	1e+011
+    20	0.00011698	10000	1e+011
+    21	0.000119033	10000	1e+011
+    22	0.000111064	10000	1e+011
+    23	0.000112858	10000	1e+011
+    24	0.000114987	10000	1e+011
+    25	0.000108408	10000	1e+011
+    26	0.000110191	10000	1e+011
+    27	0.000112307	10000	1e+011
+    28	0.000106352	10000	1e+011
+    29	0.000108105	10000	1e+011
+    30	0.000110188	10000	1e+011
+    31	9.98542e-005	10000	1e+011
+    32	0.00010151	10000	1e+011
+    33	0.000103239	10000	1e+011
+    34	9.35572e-005	10000	1e+011
+    35	9.50514e-005	10000	1e+011
+    36	9.67644e-005	10000	1e+011
+    37	9.0214e-005	10000	1e+011
+    38	9.17278e-005	10000	1e+011
+    39	9.34873e-005	10000	1e+011
+    40	8.80815e-005	10000	1e+011
+    41	8.95735e-005	10000	1e+011
+    42	9.13142e-005	10000	1e+011
+    43	8.6427e-005	10000	1e+011
+    44	8.78869e-005	10000	1e+011
+    45	8.95964e-005	10000	1e+011
+    46	8.5988e-005	10000	1e+011
+    47	8.7573e-005	10000	1e+011
+    48	8.91465e-005	10000	1e+011
+    49	8.07106e-005	10000	1e+011
+    50	8.20751e-005	10000	1e+011
+    51	8.35936e-005	10000	1e+011
+    52	7.78716e-005	10000	1e+011
+    53	7.92283e-005	10000	1e+011
+    54	8.07739e-005	10000	1e+011
+    55	7.60527e-005	10000	1e+011
+    56	7.73789e-005	10000	1e+011
+    57	7.89018e-005	10000	1e+011
+    58	7.46378e-005	10000	1e+011
+    59	7.59291e-005	10000	1e+011
+    60	7.74214e-005	10000	1e+011
+    61	7.65329e-005	10000	1e+011
+    62	7.80867e-005	10000	1e+011
+    63	7.95632e-005	10000	1e+011
+    64	7.19666e-005	10000	1e+011
+    65	7.32509e-005	10000	1e+011
+    66	7.46414e-005	10000	1e+011
+    67	6.94756e-005	10000	1e+011
+    68	7.07309e-005	10000	1e+011
+    69	7.21342e-005	10000	1e+011
+    70	6.78723e-005	10000	1e+011
+    71	6.909e-005	10000	1e+011
+    72	7.04675e-005	10000	1e+011
+    73	6.66217e-005	10000	1e+011
+    74	6.7802e-005	10000	1e+011
+    75	6.91487e-005	10000	1e+011
+
+Measurement: snr_achieved
+  step	20*log10(0.8485/vnoise_rms)
+     1	73.6181
+     2	73.5065
+     3	73.3761
+     4	74.2147
+     5	74.0929
+     6	73.9458
+     7	74.5408
+     8	74.4069
+     9	74.2471
+    10	74.7536
+    11	74.6159
+    12	74.4522
+    13	74.9218
+    14	74.7829
+    15	74.6182
+    16	76.7592
+    17	76.632
+    18	76.4933
+    19	77.3405
+    20	77.2108
+    21	77.0597
+    22	77.6615
+    23	77.5224
+    24	77.3601
+    25	77.8718
+    26	77.7301
+    27	77.5649
+    28	78.0381
+    29	77.8961
+    30	77.7303
+    31	78.5857
+    32	78.4429
+    33	78.2962
+    34	79.1515
+    35	79.0139
+    36	78.8587
+    37	79.4676
+    38	79.323
+    39	79.158
+    40	79.6753
+    41	79.5294
+    42	79.3623
+    43	79.84
+    44	79.6946
+    45	79.5272
+    46	79.8843
+    47	79.7256
+    48	79.571
+    49	80.4344
+    50	80.2888
+    51	80.1296
+    52	80.7455
+    53	80.5954
+    54	80.4276
+    55	80.9507
+    56	80.8006
+    57	80.6313
+    58	81.1139
+    59	80.9649
+    60	80.7958
+    61	80.8961
+    62	80.7215
+    63	80.5588
+    64	81.4304
+    65	81.2768
+    66	81.1134
+    67	81.7364
+    68	81.5808
+    69	81.4102
+    70	81.9392
+    71	81.7847
+    72	81.6133
+    73	82.1007
+    74	81.9482
+    75	81.7774
 
 
-Date: Sun Feb 15 09:56:32 2026
-Total elapsed time: 0.069 seconds.
+Date: Sun Feb 15 11:13:17 2026
+Total elapsed time: 1.707 seconds.
 
 tnom = 27
 temp = 27
 method = trap
-totiter = 491
+totiter = 439
 traniter = 0
 tranpoints = 0
 accept = 0
 rejected = 0
 matrix size = 51
-fillins = 60
+fillins = 55
 solver = Normal
-Matrix Compiler1:     373 opcodes
-Matrix Compiler2: off
+Matrix Compiler1:     364 opcodes
+Matrix Compiler2: off  [0.2]/0.4/0.5
+
