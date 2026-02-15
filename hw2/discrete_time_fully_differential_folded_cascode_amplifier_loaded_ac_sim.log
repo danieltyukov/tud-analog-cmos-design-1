@@ -106,8 +106,8 @@ pm_phase: ph(v(voutp2,voutn2))=(45.1046dB,0°) at 343427
 phase_margin: 180+pm_phase=(51.1256dB,0°)
 
 
-Date: Sun Feb 15 18:38:09 2026
-Total elapsed time: 0.306 seconds.
+Date: Sun Feb 15 22:07:58 2026
+Total elapsed time: 0.384 seconds.
 
 tnom = 27
 temp = 27
@@ -121,5 +121,5 @@ matrix size = 72
 fillins = 160
 solver = Normal
 Matrix Compiler1:     891 opcodes
-Matrix Compiler2: off  [0.4]/0.7/0.5
+Matrix Compiler2: off  [0.4]/0.6/0.4
 

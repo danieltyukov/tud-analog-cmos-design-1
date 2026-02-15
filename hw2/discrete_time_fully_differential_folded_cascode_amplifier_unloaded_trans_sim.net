@@ -1,0 +1,99 @@
+* Z:\home\danieltyukov\workspace\tud\tud-analog-cmos-design-1\hw2\discrete_time_fully_differential_folded_cascode_amplifier_unloaded_trans_sim.asc
+Mp1 Vsp Vbp Vddb Vddb pch l={L} w={W} m={Mp}
+Mp2 Vbp Vcp Vsp Vddb pch l={L} w={W} m={Mp}
+Mp3 Vcp Vcp Vddb Vddb pch l={L} w={W} m={Mp}
+Mn1 Vsn Vbn 0 0 nch l={L} w={W} m={Mn}
+Mn2 Vbn Vcn Vsn 0 nch l={L} w={W} m={Mn}
+Mn3 Vcn Vcn 0 0 nch l={L} w={W} m={Mn}
+Ibm Vbp Vbn {Ibm}
+Ibn Vddb Vcn {Ibm*Rn}
+Ibp Vcp 0 {Ibm*Rp}
+V1 Vddb 0 1.8
+V2 Vdd 0 1.8
+C1 Vdd Vbp {Cbig}
+C2 Vdd Vsp {Cbig}
+C3 Vdd Vcp {Cbig}
+C4 0 Vbn {Cbig}
+C5 0 Vsn {Cbig}
+C6 0 Vcn {Cbig}
+E1 N002 Vbcm N003 Vbn 1
+R1 N002 Voutn {Rbig}
+R2 Voutp N002 {Rbig}
+C7 Voutp Vbcm {Cfb}
+C8 Voutn Vbcm {Cfb}
+Vcm N003 0 0.9
+E2 N005 Vpl Vgpp Vgpn {Aadd/2}
+E3 Vpr N005 Vgpp Vgpn {Aadd/2}
+E4 N005 0 Vcp 0 1
+E5 N006 Vnl Vgnp Vgnn {Aadd/2}
+E6 Vnr N006 Vgnp Vgnn {Aadd/2}
+E7 N006 0 Vcn 0 1
+Mp1.2 Vgpn Vbp Vdd Vdd pch l={L} w={W} m={Mp13}
+Mn5.2 Vgnn Vbcm 0 0 nch l={L} w={W} m={Mn56}
+Mp2.2 Voutp Vpr Vgpn Vdd pch l={L} w={W} m={Mp24}
+Mn6.2 Voutp Vnr Vgnn 0 nch l={L} w={W} m={Mn56}
+Mp3.2 Vgpp Vbp Vdd Vdd pch l={L} w={W} m={Mp13}
+Mn7.2 Vgnp Vbcm 0 0 nch l={L} w={W} m={Mn78}
+Mp4.2 Voutn Vpl Vgpp Vdd pch l={L} w={W} m={Mp24}
+Mn8.2 Voutn Vnl Vgnp 0 nch l={L} w={W} m={Mn78}
+Mn4.2 Vgpp Vin N001 0 nch l={L} w={W} m={Mn34}
+Mn3.2 Vgpn Vip N001 0 nch l={L} w={W} m={Mn34}
+Mn2.2 N001 Vbcn N004 0 nch l={L} w={W} m={Mn12}
+Mn1.2 N004 Vbn 0 0 nch l={L} w={W} m={Mn12}
+E15 Vbcn 0 Vcn 0 1
+C11 0 Voutn {Cload}
+C12 0 Voutp {Cload}
+R5 Voutp Vip {Rfb}
+C13 Voutp Vip {Cfb}
+R6 Vin Voutn {Rfb}
+C14 Vin Voutn {Cfb}
+R7 N008 Vin {Rin}
+C15 N008 Vin {Cin}
+R8 N010 Vip {Rin}
+C16 N010 Vip {Cin}
+V6 N009 0 0.9
+E8 virtualground 0 Vip Vin 1
+E9 N008 N009 N007 0 -0.5
+E10 N010 N009 N007 0 0.5
+Vin N007 0 PULSE(0 150m 1n 1n 1n 20u 40u)
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\danieltyukov\Documents\LTspiceXVII\lib\cmp\standard.mos
+.param W=1u L=0.18u Mp=60 Mn=11 Rn=5.8 Rp=7.5 mp_ratio={Mp/Mn}
+.lib 'C:\Program Files\LTC\LTspiceXVII\lib\cmp\logic018 no1of.l' TT
+* Biasing Circuit
+* Biasing Voltage Source
+* Voltage Source
+.param Cbig=1000n Lbig=1p Rbig=100G Rin=100G
+* Decoupling Capacitors
+* Ideal CMFB Unloaded
+* Ideal Gain-Boosting PMOS\nUnloaded
+* Ideal Gain-Boosting NMOS\nUnloaded
+* Ideal\nGain-Boosting\nPMOS
+* Ideal\nCMFB
+* Ideal\nGain-Boosting\nNMOS
+* OpAmp with ideal Gain-Boosting Unloaded
+* Vsp & Vsn are used for ration & ratiop determination, unused in the opamp
+* Vbcn
+* OpAmp in Feedback Unloaded for TRANS sim
+.param Aadd=100 Cfb={Cin/8} Rfb={Rin*8} Cload={Cin}
+.param Mn12={4*ScaleA} Mn56={2*ScaleA} Mn78={2*ScaleA} Mp13={4*ScaleA*mp_ratio} Mp24={2*ScaleA*mp_ratio}
+.param Mn34=200 ScaleA=0.25 Cin=18p Ibm=350u
+;op
+.tran 0 10u 0 10n
+; === TRANSIENT MEASUREMENTS (Deliverables 6, 7 & Power) ===
+.meas TRAN Asettle FIND 20*log10(1.2/(abs(V(virtualground))+1n)) AT 2.8u
+.meas TRAN T40dB WHEN 20*log10(1.2/(abs(V(virtualground))+1n))=40 RISE=1 TD=2n
+.meas TRAN T48_69dB WHEN 20*log10(1.2/(abs(V(virtualground))+1n))=48.69 RISE=1 TD=2n
+.meas TRAN tau_cl_trans PARAM T48_69dB-T40dB
+.meas TRAN Idd AVG I(V2) FROM 5u TO 10u
+.meas TRAN Idd_mA PARAM abs(Idd)*1000
+.meas TRAN Power_mW PARAM abs(Idd)*1.8*1000
+.meas TRAN FoM_lin PARAM 2*3.14159265*abs(Idd)*1.8*tau_cl_trans/pow(10764.5,2)
+.meas TRAN FoM_dB PARAM -10*log10(FoM_lin)
+;.step param Ibm 300u 650u 50u
+;.step param Cin 15p 21p 1p
+;.step param Mn34 list 100 200 400
+* Parameters, Simulations & Measurements
+.backanno
+.end
