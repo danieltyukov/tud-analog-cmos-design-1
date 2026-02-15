@@ -95,5 +95,9 @@ V6 N007 0 0.9
 * Parameters, Simulations & Measurements
 .meas AC GM_freq when ph(V(Vinpp,Vinpn))=-179.9 fall=1
 .meas AC GM_mag find mag(V(Vinpp,Vinpn)) at GM_freq
+; === CLOSED-LOOP MEASUREMENTS (Deliverable 5) ===
+.meas AC BW_cl_closed when mag(V(Vinpp,Vinpn)/(1+V(Vinpp,Vinpn)))=1/sqrt(2) fall=last
+.meas AC BW_cl_closed_Hz param BW_cl_closed
+.meas AC tau_cl_closed param 1/(2*3.14159265*BW_cl_closed)
 .backanno
 .end
