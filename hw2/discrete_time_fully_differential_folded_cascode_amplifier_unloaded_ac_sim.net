@@ -93,5 +93,7 @@ V6 N007 0 0.9
 .meas AC PM_phase find ph(V(Vinpp,Vinpn)) at BW_cl_open
 .meas AC phase_margin param 180+PM_phase
 * Parameters, Simulations & Measurements
+.meas AC GM_freq when ph(V(Vinpp,Vinpn))=-179.9 fall=1
+.meas AC GM_mag find mag(V(Vinpp,Vinpn)) at GM_freq
 .backanno
 .end

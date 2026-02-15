@@ -104,10 +104,12 @@ bw_cl_hz: bw_cl_open=(110.353dB,0°)
 tau_cl_open: 1/(2*3.14159265*bw_cl_open)=(-126.317dB,0°)
 pm_phase: ph(v(vinpp,vinpn))=(39.0857dB,180°) at 329348
 phase_margin: 180+pm_phase=(39.084dB,0°)
+gm_freq: ph(v(vinpp,vinpn))=-179.9 AT 2.20618e+009
+gm_mag: mag(v(vinpp,vinpn))=(-69.2395dB,0°) at 2.20618e+009
 
 
-Date: Sun Feb 15 15:14:23 2026
-Total elapsed time: 0.231 seconds.
+Date: Sun Feb 15 18:20:32 2026
+Total elapsed time: 0.225 seconds.
 
 tnom = 27
 temp = 27
